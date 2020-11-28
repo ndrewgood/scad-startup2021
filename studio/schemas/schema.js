@@ -3,65 +3,53 @@ import createSchema from 'part:@sanity/base/schema-creator'
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
-import localeString from './objects/localeString'
 
-// document schemas
-import navMenu from './documents/navMenu'
-import author from './documents/author'
-import category from './documents/category'
-import post from './documents/post'
-import page from './documents/page'
+// Document types
+import project from './documents/project'
+import play from './documents/play'
 import siteSettings from './documents/siteSettings'
-import route from './documents/route'
-
-import experiment from './objects/experiment'
-import simpleBlockContent from './objects/simpleBlockContent'
-
-import * as plugs from './plugs'
-import plugDefaultFields from './plugs/_plugDefaultFields'
+import collaborators from './documents/collaborators'
 
 // Object types
-import { instagram, videoEmbed } from './objects/embeds'
-import cta from './objects/cta'
-import bodyPortableText from './objects/bodyPortableText'
-import excerptPortableText from './objects/excerptPortableText'
-import mainImage from './objects/mainImage'
-import authorReference from './objects/authorReference'
+import bioPortableText from './objects/bioPortableText'
+import figure from './objects/figure'
+import projectPortableText from './objects/projectPortableText'
+import simplePortableText from './objects/simplePortableText'
 import link from './objects/link'
-import variation from './objects/variation'
-import openGraph from './objects/openGraph'
-import latex from './latex'
+import contentImage from './objects/contentImage'
+import imageText from './objects/imageText'
+import content from './objects/content'
+import contentBar from './objects/contentBar'
+import driveVideo from './objects/driveVideo'
 
-const allPlugs = Object.values(plugs).map((plug) => {
-  return { ...plug, fields: plugDefaultFields.concat(plug.fields) }
-})
 
+
+
+
+// Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
-  name: 'blog',
-  types: schemaTypes // Built-in types
-    // Our custom types
-    .concat([
-      latex,
-      localeString,
-      variation,
-      openGraph,
-      experiment,
-      route,
-      link,
-      simpleBlockContent,
-      cta,
-      siteSettings,
-      post,
-      navMenu,
-      page,
-      category,
-      author,
-      mainImage,
-      authorReference,
-      instagram,
-      videoEmbed,
-      bodyPortableText,
-      excerptPortableText,
-    ])
-    .concat(allPlugs),
+  // We name our schema
+  name: 'portfolio',
+  // Then proceed to concatenate our our document type
+  // to the ones provided by any plugins that are installed
+  types: schemaTypes.concat([
+    // When added to this list, object types can be used as
+    // { type: 'typename' } in other document schemas
+    bioPortableText,
+    figure,
+    projectPortableText,
+    simplePortableText,
+    link,
+    contentImage,
+    imageText,
+    content,
+    contentBar,
+    driveVideo,
+    // The following are document types which will appear
+    // in the studio.
+    project,
+    play,
+    siteSettings,
+    collaborators
+  ])
 })

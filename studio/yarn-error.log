@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/lib/node_modules/@sanity/cli/vendor/yarn install --json --non-interactive --ignore-engines --registry https://registry.npmjs.org
+
+PATH: 
+  /Users/owner/Desktop/repos/scad-startup2021/studio/node_modules/.bin:/Users/owner/Desktop/repos/scad-startup2021/node_modules/.bin:/Users/owner/Desktop/repos/node_modules/.bin:/Users/owner/Desktop/node_modules/.bin:/Users/owner/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/usr/local/lib/node_modules/vendor:/Users/owner/.yarn/bin:/Users/owner/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  12.13.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, rmdir '/Users/owner/Desktop/repos/scad-startup2021/studio/node_modules/.cache/@babel'
+
+npm manifest: 
+  {
+    "private": true,
+    "name": "scad-startup2021-studio",
+    "main": "package.json",
+    "author": "SCAD Flux",
+    "scripts": {
+      "dev": "sanity start",
+      "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
+      "build": "sanity build",
+      "graphql-deploy": "sanity graphql deploy --playground",
+      "lint": "eslint .",
+      "test": "sanity check"
+    },
+    "dependencies": {
+      "@sanity/base": "^1.149",
+      "@sanity/cli": "^1.149",
+      "@sanity/components": "^1.149",
+      "@sanity/core": "^1.149",
+      "@sanity/dashboard": "^1.149",
+      "@sanity/default-layout": "^1.149",
+      "@sanity/default-login": "^1.149",
+      "@sanity/desk-tool": "^1.149",
+      "date-fns": "^1.30.1",
+      "prop-types": "^15.7.2",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "sanity-plugin-dashboard-widget-document-list": "^0.0.8",
+      "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+    },
+    "devDependencies": {
+      "babel-eslint": "^10.0.1",
+      "eslint": "^5.16.0",
+      "eslint-config-standard": "^12.0.0",
+      "eslint-config-standard-react": "^7.0.2",
+      "eslint-plugin-import": "^2.17.2",
+      "eslint-plugin-node": "^9.0.1",
+      "eslint-plugin-promise": "^4.1.1",
+      "eslint-plugin-react": "^7.13.0",
+      "eslint-plugin-standard": "^4.0.0",
+      "prettier-eslint-cli": "^5.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

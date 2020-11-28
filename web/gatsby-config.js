@@ -1,34 +1,34 @@
 // Load variables from `.env` as soon as possible
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV || "development"}`
-});
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'development'}`
+})
 
-const path = require("path");
-const clientConfig = require("./client-config");
+const clientConfig = require('./client-config')
+const token = process.env.SANITY_READ_TOKEN
 
-const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   plugins: [
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-anchor-links',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-layout`,
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`)
-      }
+        // change this later
+        component: require.resolve(`./src/templates/page.js`),
+      },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: "gatsby-source-sanity",
+      resolve: 'gatsby-source-sanity',
       options: {
         ...clientConfig.sanity,
-        token: process.env.SANITY_READ_TOKEN,
+        token,
         watchMode: !isProd,
-        overlayDrafts: !isProd
+        overlayDrafts: !isProd && token
       }
     }
   ]
-};
+}

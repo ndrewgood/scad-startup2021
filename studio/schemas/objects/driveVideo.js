@@ -1,8 +1,6 @@
-import {format} from 'date-fns'
-
 export default {
-  name: 'link',
-  title: 'Link',
+  name: 'driveVideo',
+  title: 'Google Drive Video',
   type: 'object',
   fields: [
     {
@@ -14,11 +12,6 @@ export default {
         title: 'URL',
         name: 'url',
         type: 'url'
-    },
-    {
-        title: 'Important',
-        name: 'important',
-        type: 'boolean'
     }
   ],
 }

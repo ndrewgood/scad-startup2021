@@ -12,19 +12,11 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
     "@sanity/dashboard",
+    "@sanity/desk-tool",
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
-    "dashboard-widget-netlify",
-    "asset-source-thispersondoesnotexist",
-    "@sanity/vision",
-    "asset-source-unsplash",
-    "@sanity/code-input",
-    "@sanity/color-input",
-    "mux-input",
-    "google-analytics",
-    "@sanity/production-preview"
+    "dashboard-widget-netlify"
   ],
   "parts": [
     {

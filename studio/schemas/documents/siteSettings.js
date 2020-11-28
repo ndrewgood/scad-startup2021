@@ -2,7 +2,12 @@ export default {
   name: 'siteSettings',
   type: 'document',
   title: 'Site Settings',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
+  __experimental_actions: [
+    // 'create',
+    'update',
+    // 'delete',
+    'publish'
+  ],
   fields: [
     {
       name: 'title',
@@ -10,22 +15,31 @@ export default {
       title: 'Title'
     },
     {
-      title: 'Open graph',
-      name: 'openGraph',
-      description: 'These will be the default meta tags on all pages that have not set their own',
-      type: 'openGraph'
+      name: 'description',
+      type: 'text',
+      title: 'Description',
+      description: 'Describe your portfolio for search engines and social media.'
     },
     {
-      type: 'color',
-      name: 'primaryColor',
-      title: 'Primary brand color',
-      description: 'Used to generate the primary accent color for websites, press materials, etc'
+      name: 'keywords',
+      type: 'array',
+      title: 'Keywords',
+      description: 'Add keywords that describes your portfolio.',
+      of: [{type: 'string'}],
+      options: {
+        layout: 'tags'
+      }
     },
     {
-      type: 'color',
-      name: 'secondaryColor',
-      title: 'Secondary brand color',
-      description: 'Used to generate the secondary accent color for websites, press materials, etc'
-    }
+      name: 'aboutpic',
+      type: 'image',
+      title: 'About - Picture'
+    },
+    {
+      name: 'aboutdesc',
+      type: 'simplePortableText',
+      title: 'About - Description',
+      description: 'Describe your portfolio for search engines and social media.'
+    },
   ]
 }
