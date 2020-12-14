@@ -1,14 +1,17 @@
 import S from '@sanity/desk-tool/structure-builder'
+import React from 'react'
+import Emoji from 'react-emoji-render'
 
 const hiddenDocTypes = listItem =>
-  !['project', 'play', 'siteSettings', 'collaborators'].includes(listItem.getId())
+  !['partner', 'siteSettings', 'collaborators'].includes(listItem.getId())
 
 export default () =>
   S.list()
-    .title('Content')
+    .title('scadstartup.com')
     .items([
       S.listItem()
         .title('Settings')
+        .icon(() => <Emoji style={{ fontSize: 30 }} text="⚙️" />)
         .child(
           S.editor()
             .id('siteSettings')
@@ -16,13 +19,10 @@ export default () =>
             .documentId('siteSettings')
         ),
       S.listItem()
-        .title('Projects')
-        .schemaType('project')
-        .child(S.documentTypeList('project').title('Projects')),
-      S.listItem()
-        .title('Play')
-        .schemaType('play')
-        .child(S.documentTypeList('play').title('Play')),
+        .title('Partners')
+        .icon(() => <Emoji style={{ fontSize: 30 }} text="🤝" />)
+        .schemaType('partner')
+        .child(S.documentTypeList('partner').title('Partner')),
       S.listItem()
         .title('Collaborators')
         .schemaType('collaborators')

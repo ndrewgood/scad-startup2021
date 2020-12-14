@@ -10,10 +10,5 @@ export default {
         name: 'title',
         type: 'string'
     },
-    {
-        title: 'Text',
-        name: 'text',
-        type: 'projectPortableText'
-    }
   ],
 }
