@@ -6,17 +6,14 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Document types
 import partner from './documents/partner'
-import siteSettings from './documents/siteSettings'
-import collaborators from './documents/collaborators'
+import team from './documents/team'
+import faq from './documents/faq'
+import schedule from './documents/schedule'
+import startupTeamMember from './documents/startupTeamMember'
+import seoSettings from './documents/seoSettings'
 
 // Object types
-import bioPortableText from './objects/bioPortableText'
-import figure from './objects/figure'
 import simplePortableText from './objects/simplePortableText'
-import contentImage from './objects/contentImage'
-import content from './objects/content'
-import contentBar from './objects/contentBar'
-import driveVideo from './objects/driveVideo'
 
 
 
@@ -31,17 +28,14 @@ export default createSchema({
   types: schemaTypes.concat([
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
-    bioPortableText,
-    figure,
     simplePortableText,
-    contentImage,
-    content,
-    contentBar,
-    driveVideo,
     // The following are document types which will appear
     // in the studio.
     partner,
-    siteSettings,
-    collaborators
+    team,
+    faq,
+    schedule,
+    startupTeamMember,
+    seoSettings
   ])
 })

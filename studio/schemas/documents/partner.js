@@ -6,8 +6,8 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'shown',
-      title: 'Shown?',
+      name: 'display',
+      title: 'Displayed?',
       type: 'boolean'
     },
     {
