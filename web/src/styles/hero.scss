@@ -1,0 +1,28 @@
+.hero-container {
+    width: 100vw;
+    min-height: 500px;
+    text-align: center;
+    // background-color: grey;
+}
+
+.hero-itemContainer {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.hero-smallHeader {
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+.hero-bigHeader {
+    font-size: 120px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

@@ -1,13 +1,16 @@
 import React from "react";
 import Page from "../templates/page";
 
+import Hero from '../components/hero'
 
 const PartnersTeam = (props) => {
 
   return (
     <Page>
-      {/* Nav */}
-      {/* Hero */}
+      <Hero 
+        smallHeader={"Special Thanks to our"} 
+        bigHeader={["Partners", <br key="ugh"/>, "and the", <br key="ugh2"/>, "StartUp Team"]}
+      />
       <div className="partners-team-partners">
         <h2>Our Partners and Supporters</h2>
       </div>

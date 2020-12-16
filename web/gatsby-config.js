@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-plugin-layout`,
       options: {
         // change this later
-        component: require.resolve(`./src/templates/page.js`),
+        component: require.resolve(`./src/containers/layout.js`),
       },
     },
     {

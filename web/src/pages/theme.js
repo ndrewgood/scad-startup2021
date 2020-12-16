@@ -1,13 +1,18 @@
 import React from "react";
 import Page from "../templates/page";
 
+import Hero from '../components/hero'
+
 
 const Theme = (props) => {
 
   return (
     <Page>
       {/* Nav */}
-      {/* Hero */}
+      <Hero 
+        smallHeader={"StartUp 2021 - Two Track System"} 
+        bigHeader={["Two Ways", <br key="ugh"/>,  "To Design", <br key="ugh"/>, "Fully Virtual"]}
+      />
       <div className="theme-main">
         {/*Track Button*/}
 

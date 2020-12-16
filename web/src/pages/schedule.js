@@ -1,15 +1,19 @@
 import React from "react";
 import Page from "../templates/page";
 
+import Hero from '../components/hero'
+
 
 const Schedule = (props) => {
 
   return (
     <Page>
-      {/* Nav */}
-      {/* Hero */}
+      <Hero 
+        smallHeader={"Event Schedule"} 
+        bigHeader={["What to", <br key="ugh"/>,  "Expect"]}
+      />
+      <p>schedule</p>
       <div className="schedule-grid">
-        
       </div>
     </Page>
   );

@@ -1,4 +1,7 @@
 import React from "react";
+import Layout from '../containers/layout'
+import Nav from '../components/nav'
+import NavMobile from '../components/nav-mobile'
 
 
 const Page = (props) => {
@@ -7,9 +10,10 @@ const Page = (props) => {
 
 
   return (
-    <body>
+    <Layout>
+      <Nav />
       {children}
-    </body>
+    </Layout>
   );
 };
 

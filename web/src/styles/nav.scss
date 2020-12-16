@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    width: 85vw;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.nav-startupLogo {
+    // DELETE THESE WHEN SVG IS PUT IN PLACE!!
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    // 
+    
+}
+
+.nav-itemContainer {
+    padding-inline-start: 0;
+    display: flex;
+    width: 40vw;
+    max-width: 450px;
+    min-width: 320px;
+    justify-content: space-between;
+    li {
+        list-style: none;
+    }
+}
+
+.nav-subMenuContainer:hover .nav-subMenuItems {
+    display: flex;
+}
+
+.nav-subMenuItems {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    padding-inline-start: 0;
+}

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'gatsby';
+import '../styles/nav.scss'
 
 
 const Nav = () => {
@@ -6,14 +8,22 @@ const Nav = () => {
 
   return (
     <nav>
-      {/*StartUp logo*/}
-      <ul className="nav-items">
-        <li>Resources</li>
-        <li>Showcase</li>
-        <li>Experts</li>
-        <li>Partners</li>
+      <Link to="/" className="nav-startupLogo">Logo</Link>
+      <ul className="nav-itemContainer">
+        <div className="nav-subMenuContainer">
+          <li>Resources</li>
+          <ul className="nav-subMenuItems">
+            <Link to="/theme">Theme</Link>
+            <Link to="/schedule">Schedule</Link>
+            <Link to="/deliverables">Deliverables</Link>
+            <Link to="/faq">FAQ</Link>
+          </ul>
+        </div>
+        <Link to="/showcase">Showcase</Link>
+        <Link to="/experts">Experts</Link>
+        <Link to="/partners-team">Partners</Link>
       </ul>
-      {/* Register Button */}
+      <p className="nav-registerButton">Register</p>
     </nav>
   );
 };
