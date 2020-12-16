@@ -1,0 +1,36 @@
+.theme-main {
+    background-color: lightgray;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.theme-buttonContainer {
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    button {
+        width: 50%;
+    }
+}
+
+.theme-animationContainer {
+    height: 300px;
+    width: 85vw;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.theme-infoContainer {
+    width: 85vw;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.theme-trackBody {
+    width: 500px;
+}
