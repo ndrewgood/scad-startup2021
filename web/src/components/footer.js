@@ -5,7 +5,17 @@ const Footer = () => {
 
 
   return (
-    <h1>footer</h1>
+    <footer>
+      <div className="footer-logos">
+
+      </div>
+      <div className="footer-links">
+        <div className="footer-socialLinks">
+
+        </div>
+        {/* Register Button */}
+      </div>
+    </footer>
   );
 };
 

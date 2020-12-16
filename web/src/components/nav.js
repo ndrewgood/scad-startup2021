@@ -5,7 +5,16 @@ const Nav = () => {
 
 
   return (
-    <h1>nav</h1>
+    <nav>
+      {/*StartUp logo*/}
+      <ul className="nav-items">
+        <li>Resources</li>
+        <li>Showcase</li>
+        <li>Experts</li>
+        <li>Partners</li>
+      </ul>
+      {/* Register Button */}
+    </nav>
   );
 };
 
