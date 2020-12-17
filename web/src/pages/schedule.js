@@ -2,7 +2,9 @@ import React from "react";
 import Page from "../templates/page";
 
 import Hero from '../components/hero'
+import ScheduleItem from '../components/schedule-item'
 
+import "../styles/schedule.scss"
 
 const Schedule = (props) => {
 
@@ -12,8 +14,16 @@ const Schedule = (props) => {
         smallHeader={"Event Schedule"} 
         bigHeader={["What to", <br key="ugh"/>,  "Expect"]}
       />
-      <p>schedule</p>
-      <div className="schedule-grid">
+      <div className="container">
+        <div className="schedule-grid">
+          <ScheduleItem span={4}/>
+          <ScheduleItem span={6}/>
+          <ScheduleItem span={5}/>
+          <ScheduleItem span={5}/>
+          <ScheduleItem span={6}/>
+          <ScheduleItem span={4}/>
+          <ScheduleItem span={"full"}/>
+        </div>
       </div>
     </Page>
   );

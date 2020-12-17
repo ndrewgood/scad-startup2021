@@ -1,6 +1,4 @@
 import React from "react";
-import {Link} from 'gatsby'
-
 import '../styles/footer.scss'
 
 
@@ -17,11 +15,11 @@ const Footer = () => {
         </div>
         <div className="footer-links">
           <ul className="footer-socialLinks">
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Medium</li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Medium</a></li>
           </ul>
-          <p className="footer-registerButton">Register</p>
+          <a href="" className="footer-registerButton">Register</a>
         </div>
       </div>
     </footer>
