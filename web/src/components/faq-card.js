@@ -1,12 +1,13 @@
 import React from "react";
 import ResourceCard from './resource-card'
 import FAQQuestion from './faq-question'
+import NumberedTitle from './numbered-title'
 
-const FAQCard = ({span, sectionTitle}) => {
+const FAQCard = ({sectionTitle, cardNumber, questions}) => {
   return (
-    <ResourceCard span={span} type="faq">
-        <h2>{sectionTitle}</h2>
-        <FAQQuestion/>
+    <ResourceCard direction="column">
+        <NumberedTitle number={cardNumber} title={sectionTitle}/>
+        <FAQQuestion number={1} question="This is the question?" answer="this is the answer to the question"/>
     </ResourceCard>
   );
 };

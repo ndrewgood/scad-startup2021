@@ -1,10 +1,10 @@
 import React from "react";
 
-const FAQQuestion = ({span}) => {
+const FAQQuestion = ({number, question, answer}) => {
   return (
     <div className="faq-question">
-        <h4>Here is a question?</h4>
-        <p>This is the answer.</p>
+        <h4>{number}. {question}</h4>
+        <p>{answer}</p>
     </div>
   );
 };

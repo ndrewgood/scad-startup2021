@@ -1,4 +1,5 @@
 .resourceCard {
+    position: relative;
     padding: 50px;
     border-radius: 10px;
     background: #1a1a1a;
@@ -9,6 +10,34 @@
     }    
 }
 
-.resource-card-faq {
+.resource-card-column {
+    padding: 50px 75px;
     margin-bottom: 25px;
+}
+
+.resource-card-numberedTitle {
+    position: relative;
+    left: -50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    h2 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .resource-card-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background: #FB645B;
+        color: #1a1a1a;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 24px;
+    }
 }

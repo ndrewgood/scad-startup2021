@@ -16,11 +16,11 @@ const Faq = (props) => {
       <div className="container">
         <ResourceCardGrid>
           <div className="span-5">
-            <FAQCard sectionTitle="Eligibility"/>
-            <FAQCard sectionTitle="During the Event"/>
+            <FAQCard sectionTitle="Eligibility" cardNumber="A"/>
+            <FAQCard sectionTitle="During the Event" cardNumber="C"/>
           </div>
           <div className="span-5">
-            <FAQCard sectionTitle="Registration"/>
+            <FAQCard sectionTitle="Registration" cardNumber="B"/>
           </div>
         </ResourceCardGrid>
       </div>
