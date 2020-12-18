@@ -1,0 +1,14 @@
+.resourceCard {
+    padding: 50px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    color: #f1f1f1;
+
+    @media only screen and (max-width: 650px) {
+        grid-column-start: span 1 !important;
+    }    
+}
+
+.resource-card-faq {
+    margin-bottom: 25px;
+}

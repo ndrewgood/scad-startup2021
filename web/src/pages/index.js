@@ -11,7 +11,7 @@ import ThreeHundred from '../assets/ThreeHundred.svg';
 import Thirty from '../assets/Thirty.svg';
 import Fifty from '../assets/Fifty.svg';
 import TwentySix from '../assets/TwentySix.svg';
-import TopLine from '../assets/Topline.svg';
+import TopLine from '../assets/TopLine.svg';
 import BottomLine from '../assets/BottomLine.svg';
 import StartupBig from '../assets/StartupBig.svg';
 

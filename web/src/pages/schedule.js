@@ -2,7 +2,8 @@ import React from "react";
 import Page from "../templates/page";
 
 import Hero from '../components/hero'
-import ScheduleItem from '../components/schedule-item'
+import ResourceCardGrid from '../components/resource-card-grid'
+import ScheduleCard from '../components/schedule-card'
 
 import "../styles/schedule.scss"
 
@@ -15,15 +16,15 @@ const Schedule = (props) => {
         bigHeader={["What to", <br key="ugh"/>,  "Expect"]}
       />
       <div className="container">
-        <div className="schedule-grid">
-          <ScheduleItem span={4}/>
-          <ScheduleItem span={6}/>
-          <ScheduleItem span={5}/>
-          <ScheduleItem span={5}/>
-          <ScheduleItem span={6}/>
-          <ScheduleItem span={4}/>
-          <ScheduleItem span={"full"}/>
-        </div>
+        <ResourceCardGrid>
+          <ScheduleCard span={4}/>
+          <ScheduleCard span={6}/>
+          <ScheduleCard span={5}/>
+          <ScheduleCard span={5}/>
+          <ScheduleCard span={6}/>
+          <ScheduleCard span={4}/>
+          <ScheduleCard span={"full"}/>
+        </ResourceCardGrid>
       </div>
     </Page>
   );
