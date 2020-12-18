@@ -1,0 +1,99 @@
+main{
+    background-color: #0d0d0d;
+}
+
+
+.hero{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img:nth-child(3){
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+}
+
+.hero-words{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.down-arrow{
+    position: absolute;
+    bottom: 25px;
+}
+
+.about{
+    background-color: #1A1A1A;
+    p{
+        font-size: 18px;
+    }
+}
+
+.about-position{
+    display: flex;
+}
+
+.about-text{
+    padding: 100px 0;
+}
+
+
+.big-desc{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.red-highlight{
+    color: #FB645B;
+}
+
+.blue-highlight{
+    color: #4176F9;
+}
+
+.startup-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    div{
+        margin: 0 25px;
+    }
+}
+
+.stats-section{
+    background-color: #1a1a1a;
+}
+
+.ready{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.startupBig{
+    min-height: 500px;
+    background-image: url(../assets/StartupBig.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.different{
+    text-align: center;
+    margin-top: 100px;
+
+    h1{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 22px;
+    }
+}

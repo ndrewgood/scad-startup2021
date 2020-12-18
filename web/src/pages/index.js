@@ -6,7 +6,7 @@ const IndexPage = (props) => {
 
   return (
     <Page>
-      <h1>Test!</h1>
+
     </Page>
   );
 };
