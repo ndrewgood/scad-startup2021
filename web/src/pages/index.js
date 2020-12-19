@@ -2,18 +2,18 @@ import React from "react";
 import Page from "../templates/page";
 
 // images
-import Ideate from '../assets/Ideate.svg';
-import Design from '../assets/Design.svg';
-import Create from '../assets/Create.svg';
-import DownArrow from '../assets/DownArrow.svg';
-import IllyOne from '../assets/IllyOne.png';
-import ThreeHundred from '../assets/ThreeHundred.svg';
-import Thirty from '../assets/Thirty.svg';
-import Fifty from '../assets/Fifty.svg';
-import TwentySix from '../assets/TwentySix.svg';
-import TopLine from '../assets/TopLine.svg';
-import BottomLine from '../assets/BottomLine.svg';
-import StartupBig from '../assets/StartupBig.svg';
+import Ideate from '../assets/svg/Ideate.svg';
+import Design from '../assets/svg/Design.svg';
+import Create from '../assets/svg/Create.svg';
+import DownArrow from '../assets/svg/DownArrow.svg';
+import IllyOne from '../assets/images/IllyOne.png';
+import ThreeHundred from '../assets/svg/ThreeHundred.svg';
+import Thirty from '../assets/svg/Thirty.svg';
+import Fifty from '../assets/svg/Fifty.svg';
+import TwentySix from '../assets/svg/TwentySix.svg';
+import TopLine from '../assets/svg/TopLine.svg';
+import BottomLine from '../assets/svg/BottomLine.svg';
+import StartupBig from '../assets/svg/StartupBig.svg';
 
 // scss
 import "../styles/hero-home.scss"
