@@ -74,7 +74,7 @@ const Theme = (props) => {
           <button onClick={() => setTrack(2)}>Track 2</button>
         </div>
         <div className="theme-animationContainer">
-          {track == 1 ?
+          {track === 1 ?
           <>
             <TrackOne in={true} />
             <TrackTwo in={false} />

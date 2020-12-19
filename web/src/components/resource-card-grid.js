@@ -2,7 +2,7 @@ import React from "react";
 
 import '../styles/resource-card-grid.scss'
 
-const resourceCard = ({span, bg, children}) => {
+const ResourceCardGrid = ({span, bg, children}) => {
   return (
     <div className="resource-card-grid">
         {children}
@@ -10,4 +10,4 @@ const resourceCard = ({span, bg, children}) => {
   );
 };
 
-export default resourceCard;
+export default ResourceCardGrid;

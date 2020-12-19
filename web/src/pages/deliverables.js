@@ -3,7 +3,18 @@ import Page from "../templates/page";
 
 import Hero from '../components/hero'
 import ResourceCardGrid from '../components/resource-card-grid'
-import DeliverableCard from '../components/deliverable-card'
+import ResourceCard from '../components/resource-card' 
+import NumberedTitle from '../components/numbered-title'
+
+const DeliverableCard = ({span, deliverableTitle, deliverableDescription, cardNumber}) => {
+  return (
+    <ResourceCard span={span} direction="column">
+        <NumberedTitle title={deliverableTitle} number={cardNumber}/>
+        <p>{deliverableDescription}</p>
+        {/* Image */}
+    </ResourceCard>
+  );
+};
 
 const Deliverables = (props) => {
 

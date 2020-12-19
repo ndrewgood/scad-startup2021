@@ -3,9 +3,22 @@ import Page from "../templates/page";
 
 import Hero from '../components/hero'
 import ResourceCardGrid from '../components/resource-card-grid'
-import ScheduleCard from '../components/schedule-card'
+import ResourceCard from '../components/resource-card'
 
 import "../styles/schedule.scss"
+
+const ScheduleCard = ({span}) => {
+  return (
+    <ResourceCard span={span}>
+        <h3>Date</h3>
+        <h2>Title</h2>
+        <p>Description</p>
+        <div className="schedule-itemTimeLink">
+            <p>Time & meeting Link will be announced soon!</p>
+        </div>
+    </ResourceCard>
+  );
+};
 
 const Schedule = (props) => {
 
