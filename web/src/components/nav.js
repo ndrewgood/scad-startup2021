@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from 'gatsby';
 import '../styles/nav.scss'
 
+import StartUp from '../assets/svg/startup-logo.svg'
 
 const Nav = () => {
 
 
   return (
     <nav>
-      <Link to="/" className="nav-startupLogo">Logo</Link>
+      <Link to="/" className="nav-startupLogo"><img src={StartUp} alt="StartUp Logo" /></Link>
       <ul className="nav-itemContainer">
         <div className="nav-subMenuContainer">
           <li>Resources</li>

@@ -17,7 +17,10 @@
 .hero-smallHeader {
     font-size: 20px;
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: .5em;
+
+    color: #BABABA;
+
 }
 
 
@@ -25,4 +28,11 @@
     font-size: 120px;
     margin-block-start: 0;
     margin-block-end: 0;
+    width: fit-content;
+    margin: auto;
+
+    line-height: 120px;
+    background: linear-gradient(90deg, #677CFC -8.94%, #E56F6E 112.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
