@@ -8,11 +8,22 @@ import ResourceCard from '../components/resource-card'
 import FAQQuestion from '../components/faq-question'
 import NumberedTitle from '../components/numbered-title'
 
-const FAQCard = ({sectionTitle, cardNumber, questions}) => {
+import '../styles/faq.scss'
+
+const FAQCard = ({sectionTitle, cardNumber, faqs}) => {
+
   return (
-    <ResourceCard direction="column">
+    <ResourceCard direction="column" type="faq">
         <NumberedTitle number={cardNumber} title={sectionTitle}/>
-        <FAQQuestion number={1} question="This is the question?" answer="this is the answer to the question"/>
+
+        {
+          faqs.map((faq, index) => ( 
+            <FAQQuestion 
+              number={index+1} 
+              question={faq.question}
+              answer={faq.answer}/>
+          ))
+        }
     </ResourceCard>
   );
 };
@@ -28,11 +39,11 @@ const Faq = (props) => {
       <div className="container">
         <ResourceCardGrid>
           <div className="span-5">
-            <FAQCard sectionTitle="Eligibility" cardNumber="A"/>
-            <FAQCard sectionTitle="During the Event" cardNumber="C"/>
+            <FAQCard sectionTitle="Eligibility" cardNumber="A" faqs={[{question: "this is the first question", answer: "this is the answer to that question"}, {question: "this is the second question", answer: "this is the answer to the second question"}]}/>
+            <FAQCard sectionTitle="During the Event" cardNumber="C" faqs={[{question: "hello", answer: "bye"}]}/>
           </div>
           <div className="span-5">
-            <FAQCard sectionTitle="Registration" cardNumber="B"/>
+            <FAQCard sectionTitle="Registration" cardNumber="B" faqs={[{question: "hello", answer: "bye"}]}/>
           </div>
         </ResourceCardGrid>
       </div>

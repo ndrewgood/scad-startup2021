@@ -36,6 +36,9 @@ const resourceCard = ({span, bg, children, direction, type}) => {
     case "schedule":
       cardClass+=" schedule-card"
       break;
+    case "faq":
+      cardClass+=" faq-card"
+      break;
   }
 
   return (

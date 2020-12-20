@@ -54,59 +54,5 @@
     
 }
 
-.schedule-card {
-    display: flex;
 
-
-    .schedule-card-content {
-        .schedule-card-title {
-            margin: 0 0 20px;
-            font-size: 48px;
-        }
-
-        .schedule-card-date {
-            margin: 0;
-            font-size: 22px;
-            color: #FB645B;
-
-        }
-        
-        p {
-            margin: 0;
-        }
-
-        .schedule-card-description {
-            margin-bottom: 40px;
-        }
-
-        .schedule-card-timeLink {
-            margin: -10px;
-            padding: 20px;
-            background: #2F2F2F;
-            border-radius: 10px;
-            font-style: italic;
-            text-align: center;
-        }
-    }
-
-    .schedule-card-image {
-
-    }
-}
-
-.schedule-card.resource-card-gradient {
-    .schedule-card-content {
-        .schedule-card-date {
-            color: #fff;
-        }
-        
-        p {
-            color: #fff;
-        }
-
-        .schedule-card-timeLink {
-            background: rgba(216, 212, 212, 0.38);
-        }
-    }
-}
 
