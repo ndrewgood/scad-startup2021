@@ -7,14 +7,17 @@ import ResourceCard from '../components/resource-card'
 
 import "../styles/schedule.scss"
 
-const ScheduleCard = ({span}) => {
+const ScheduleCard = ({span, bg, type}) => {
   return (
-    <ResourceCard span={span}>
-        <h3>Date</h3>
-        <h2>Title</h2>
-        <p>Description</p>
-        <div className="schedule-itemTimeLink">
-            <p>Time & meeting Link will be announced soon!</p>
+    <ResourceCard span={span} bg={bg} type="schedule">
+        <div className="schedule-card-content">
+          <h3 className="schedule-card-date">Date</h3>
+          <h2 className="schedule-card-title">Title</h2>
+          <p className="schedule-card-description">Description</p>
+          <p className="schedule-card-timeLink">Time & meeting link will be announced soon!</p>
+        </div>
+        <div className="schedule-card-image">
+          {/* Insert Image */}
         </div>
     </ResourceCard>
   );
@@ -36,7 +39,7 @@ const Schedule = (props) => {
           <ScheduleCard span={5}/>
           <ScheduleCard span={6}/>
           <ScheduleCard span={4}/>
-          <ScheduleCard span={"full"}/>
+          <ScheduleCard span={"full"} bg="gradient"/>
         </ResourceCardGrid>
       </div>
     </Page>

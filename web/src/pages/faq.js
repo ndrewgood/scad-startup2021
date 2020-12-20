@@ -3,7 +3,19 @@ import Page from "../templates/page";
 
 import Hero from '../components/hero';
 import ResourceCardGrid from '../components/resource-card-grid'
-import FAQCard from '../components/faq-card'
+
+import ResourceCard from '../components/resource-card'
+import FAQQuestion from '../components/faq-question'
+import NumberedTitle from '../components/numbered-title'
+
+const FAQCard = ({sectionTitle, cardNumber, questions}) => {
+  return (
+    <ResourceCard direction="column">
+        <NumberedTitle number={cardNumber} title={sectionTitle}/>
+        <FAQQuestion number={1} question="This is the question?" answer="this is the answer to the question"/>
+    </ResourceCard>
+  );
+};
 
 const Faq = (props) => {
 

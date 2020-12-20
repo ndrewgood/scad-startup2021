@@ -27,12 +27,12 @@ const Deliverables = (props) => {
       <div className="container">
         <ResourceCardGrid>
           <div className="span-5">
-            <DeliverableCard deliverableTitle="Presentation Deck" deliverableDescription="here is a random description"  cardNumber="1"/>
-            <DeliverableCard deliverableTitle="Business Model" deliverableDescription="here is a random description" cardNumber="3"/>
+            <DeliverableCard deliverableTitle="Presentation Deck" deliverableDescription="Students will wow the judges with a digital slideshow to explain their idea and area of impact that their new product will have."  cardNumber="1"/>
+            <DeliverableCard deliverableTitle="Business Model" deliverableDescription={["Determine how your solution will make an impact and generate revenue.", <br/>, "Download the business model PDF here."]} cardNumber="3"/>
           </div>
           <div className="span-5">
-            <DeliverableCard deliverableTitle="Visual Prototype" deliverableDescription="here is a random description"  cardNumber="2"/>
-            <DeliverableCard deliverableTitle="WOW Factor" deliverableDescription="here is a random description"  cardNumber="4"/>
+            <DeliverableCard deliverableTitle="Visual Prototype" deliverableDescription="Students need to provide an example of their concept through a prototype that they can show the judges, either in digital or physical form."  cardNumber="2"/>
+            <DeliverableCard deliverableTitle="WOW Factor" deliverableDescription="What else makes your solution stand out from others? Bring posters, vision films, stickers, clothing, anything you’d like!"  cardNumber="4"/>
           </div>
         </ResourceCardGrid>
       </div>

@@ -7,7 +7,11 @@
 
     @media only screen and (max-width: 650px) {
         grid-column-start: span 1 !important;
-    }    
+    }
+    
+    p {
+        color: #c5c5c5;
+    }
 }
 
 .resource-card-column {
@@ -16,11 +20,12 @@
 }
 
 .resource-card-numberedTitle {
-    position: relative;
-    left: -50px;
+    margin-left: -55px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: start;
+    
     
     h2 {
         font-size: 36px;
@@ -29,15 +34,79 @@
 
     .resource-card-number {
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         height: 40px;
         width: 40px;
         border-radius: 20px;
+        margin-right: 15px;
         background: #FB645B;
         color: #1a1a1a;
-        margin-right: 10px;
         font-weight: bold;
         font-size: 24px;
+        flex-shrink: 0;
     }
 }
+
+.resource-card-gradient {
+    background: linear-gradient(264.55deg, #FB645B -24.43%, #4176F9 107.46%);
+
+    
+}
+
+.schedule-card {
+    display: flex;
+
+
+    .schedule-card-content {
+        .schedule-card-title {
+            margin: 0 0 20px;
+            font-size: 48px;
+        }
+
+        .schedule-card-date {
+            margin: 0;
+            font-size: 22px;
+            color: #FB645B;
+
+        }
+        
+        p {
+            margin: 0;
+        }
+
+        .schedule-card-description {
+            margin-bottom: 40px;
+        }
+
+        .schedule-card-timeLink {
+            margin: -10px;
+            padding: 20px;
+            background: #2F2F2F;
+            border-radius: 10px;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+
+    .schedule-card-image {
+
+    }
+}
+
+.schedule-card.resource-card-gradient {
+    .schedule-card-content {
+        .schedule-card-date {
+            color: #fff;
+        }
+        
+        p {
+            color: #fff;
+        }
+
+        .schedule-card-timeLink {
+            background: rgba(216, 212, 212, 0.38);
+        }
+    }
+}
+

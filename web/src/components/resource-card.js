@@ -2,7 +2,7 @@ import React from "react";
 
 import '../styles/resource-card.scss'
 
-const resourceCard = ({span, bg, children, direction}) => {
+const resourceCard = ({span, bg, children, direction, type}) => {
   let cardClass ="resourceCard";
 
   switch(span) {
@@ -23,6 +23,18 @@ const resourceCard = ({span, bg, children, direction}) => {
   switch(direction) {
     case "column":
       cardClass+=" resource-card-column"
+      break;
+  }
+
+  switch(bg) {
+    case "gradient":
+      cardClass+=" resource-card-gradient"
+      break;
+  }
+
+  switch(type) {
+    case "schedule":
+      cardClass+=" schedule-card"
       break;
   }
 

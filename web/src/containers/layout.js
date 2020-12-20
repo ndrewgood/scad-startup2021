@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from '../components/nav'
 
 import '../styles/general.scss'
+import '../styles/typography.scss'
 
 const Layout = (props) => {
 
