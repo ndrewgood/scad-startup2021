@@ -14,6 +14,7 @@ import seoSettings from './documents/seoSettings'
 
 // Object types
 import simplePortableText from './objects/simplePortableText'
+import qna from './objects/qna'
 
 
 
@@ -29,6 +30,7 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     simplePortableText,
+    qna,
     // The following are document types which will appear
     // in the studio.
     partner,

@@ -1,14 +1,15 @@
 import React from "react";
+import {graphql, useStaticQuery} from 'gatsby';
 import Page from "../templates/page";
 
 import Hero from '../components/hero';
-import ResourceCardGrid from '../components/resource-card-grid'
+import ResourceCardGrid from '../components/resource-card-grid';
 
-import ResourceCard from '../components/resource-card'
-import FAQQuestion from '../components/faq-question'
-import NumberedTitle from '../components/numbered-title'
+import ResourceCard from '../components/resource-card';
+import FAQQuestion from '../components/faq-question';
+import NumberedTitle from '../components/numbered-title';
 
-import '../styles/faq.scss'
+import '../styles/faq.scss';
 
 const FAQCard = ({sectionTitle, cardNumber, faqs}) => {
 
@@ -20,6 +21,7 @@ const FAQCard = ({sectionTitle, cardNumber, faqs}) => {
           faqs.map((faq, index) => ( 
             <FAQQuestion 
               number={index+1} 
+              key={faq._key} 
               question={faq.question}
               answer={faq.answer}/>
           ))
@@ -29,6 +31,35 @@ const FAQCard = ({sectionTitle, cardNumber, faqs}) => {
 };
 
 const Faq = (props) => {
+  const data = useStaticQuery(graphql`
+    query qnaQuery{
+      allSanityFaq(sort: {order: ASC, fields: order}) {
+        edges {
+          node {
+            _id
+            title
+            order
+            qnaList {
+              _key
+              question
+              answer
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const faqArray = data.allSanityFaq.edges;
+  //console.log(faqArray);
+
+  let faqColumn1 = [];
+  let faqColumn2 = [];
+
+  faqArray.map((faqSection, index) => ((index+1)%2) ? faqColumn1.push(faqSection) : faqColumn2.push(faqSection));
+
+  //console.log(faqColumn1);
+  //console.log(faqColumn2);
 
   return (
     <Page>
@@ -39,11 +70,28 @@ const Faq = (props) => {
       <div className="container">
         <ResourceCardGrid>
           <div className="span-5">
-            <FAQCard sectionTitle="Eligibility" cardNumber="A" faqs={[{question: "this is the first question", answer: "this is the answer to that question"}, {question: "this is the second question", answer: "this is the answer to the second question"}]}/>
-            <FAQCard sectionTitle="During the Event" cardNumber="C" faqs={[{question: "hello", answer: "bye"}]}/>
+            {
+              faqColumn1.map((edge) => (
+                <FAQCard
+                  key={edge.node._id} 
+                  sectionTitle={edge.node.title}
+                  cardNumber={edge.node.order} 
+                  faqs={edge.node.qnaList}
+                  />
+              ))
+            }
           </div>
           <div className="span-5">
-            <FAQCard sectionTitle="Registration" cardNumber="B" faqs={[{question: "hello", answer: "bye"}]}/>
+            {
+              faqColumn2.map((edge) => (
+                <FAQCard
+                  key={edge.node._id}  
+                  sectionTitle={edge.node.title}
+                  cardNumber={edge.node.order} 
+                  faqs={edge.node.qnaList}
+                  />
+              ))
+            }
           </div>
         </ResourceCardGrid>
       </div>

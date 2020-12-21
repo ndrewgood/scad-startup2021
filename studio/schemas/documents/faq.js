@@ -29,6 +29,12 @@ export default {
       title: 'Content',
       type: 'simplePortableText',
     },
+    {
+      name: 'qnaList',
+      title: 'Question List',
+      type: 'array',
+      of: [{type: 'qna'}]
+    }
   ],
   orderings: [
     {
