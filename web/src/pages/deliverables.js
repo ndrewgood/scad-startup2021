@@ -6,12 +6,18 @@ import ResourceCardGrid from '../components/resource-card-grid'
 import ResourceCard from '../components/resource-card' 
 import NumberedTitle from '../components/numbered-title'
 
+import testImage from '../assets/images/testDeliverable.png'
+
+import '../styles/deliverables.scss'
+
 const DeliverableCard = ({span, deliverableTitle, deliverableDescription, cardNumber}) => {
   return (
     <ResourceCard span={span} direction="column">
         <NumberedTitle title={deliverableTitle} number={cardNumber}/>
         <p>{deliverableDescription}</p>
-        {/* Image */}
+        <div className="deliverables-imageContainer">
+          <img src={testImage} alt="" srcset=""/>
+        </div>
     </ResourceCard>
   );
 };
