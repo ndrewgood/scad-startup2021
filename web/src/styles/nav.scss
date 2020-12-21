@@ -14,6 +14,9 @@ nav {
       background: none;
       transition: .2s;
     }
+    a, .nav-subMenuContainer {
+      margin-top: 10px;
+    }
     a:hover {
       color: #f86865;
       text-shadow: 0px 0px 7px #f8676577;
@@ -21,16 +24,25 @@ nav {
     }
 }
 
+.desktopNav {
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
 
 .nav-startupLogo {
   display: flex;
   img {
     margin-top: -10px;
-    width: 70px;
-  }
-  img:hover {
+    width: 80px;
     -webkit-filter: drop-shadow( 3px 3px 2px rgba(228, 84, 84, 0.7));
     filter: drop-shadow( 3px 3px 2px rgba(247, 68, 68, 0.7));
+    transition: .2s;
+  }
+  img:hover {
+    -webkit-filter: drop-shadow( 3px 3px 5px rgba(228, 84, 84, 0.904));
+    filter: drop-shadow( 3px 3px 5px rgba(247, 68, 68, 0.877));
   }
     
 }
@@ -42,6 +54,9 @@ nav {
     max-width: 450px;
     min-width: 320px;
     justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
     li {
         list-style: none;
         padding-bottom: 20px;
@@ -80,6 +95,7 @@ nav {
       font-weight: normal;
       padding: 7px 20px;
       background: none;
+      margin-top: 0px;
       
     }
     a:hover {
@@ -95,6 +111,126 @@ nav {
     // }
 }
 
+.nav-registerButton {
+  background: linear-gradient(54.01deg, #FB645B -32.13%, #4176F9 122.05%);
+  border: 1px solid rgba(233, 233, 233, 0.4);
+  border-radius: 30px;
+  padding: 10px 40px;
+  margin-top: 15px;
+  // width: 80px;
+}
+
+.nav-registerButton:hover {
+  text-shadow: none;
+  color: #F1F1F1;
+}
+
+
+//MOBILE NAV
+
+.mobileNav {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  margin-top: 0;
+  top: 0;
+  background-color: #0d0d0dad;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+  }
+}
+
+.mobileNav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.mobileNav-button {
+  background: #323232;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+.mobileNav-button:hover {
+  cursor: pointer;
+}
+
+.mobileNav-button:focus {
+  outline:none;
+}
+
+.mobileNav-startupLogo {
+  display: flex;
+  img {
+    margin-top: -10px;
+    width: 80px;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(228, 84, 84, 0.7));
+    filter: drop-shadow( 3px 3px 2px rgba(247, 68, 68, 0.7));
+    transition: .2s;
+  }
+  img:hover {
+    -webkit-filter: drop-shadow( 3px 3px 5px rgba(228, 84, 84, 0.904));
+    filter: drop-shadow( 3px 3px 5px rgba(247, 68, 68, 0.877));
+  }
+    
+}
+
+.mobileNav-menu {
+  position: fixed;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0d0d0d4d;
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  top: 0;
+  @media only screen and (min-width: 800px) {
+    display: none !important;
+  }
+}
+
+.showMenu {
+  display: flex;
+}
+
+.mobileNav-menuContainer {
+  position: absolute;
+  height: 100vh;
+  width: 500px;
+  background: #1A1A1A;
+  right: 0;
+}
+
+.mobileNav-menuTop {
+  margin-top: 40px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobileNav-x {
+  background: #323232;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+.mobileNav-x:hover {
+  cursor: pointer;
+}
+
+.mobileNav-x:focus {
+  outline:none;
+}
+
 
 //HEADROOM CSS
 
@@ -104,6 +240,8 @@ nav {
     right: 0;
     z-index: 1;
     transition: transform 150ms ease-in-out;
+    background-color: #0d0d0dad;
+    padding-bottom: 15px;
 
   }
   .headroom--unfixed {

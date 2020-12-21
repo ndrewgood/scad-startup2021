@@ -17,6 +17,7 @@ const Page = (props) => {
       <Headroom disableInlineStyles={true}>
         <Nav />
       </Headroom>
+      <NavMobile />
       {children}
       <Footer/>
     </Layout>

@@ -8,7 +8,7 @@ const Nav = () => {
 
 
   return (
-    <nav>
+    <nav className="desktopNav">
       <Link to="/" className="nav-startupLogo"><img src={StartUp} alt="StartUp Logo" /></Link>
       <ul className="nav-itemContainer">
         <div className="nav-subMenuContainer">
@@ -24,7 +24,7 @@ const Nav = () => {
         <Link to="/experts">Experts</Link>
         <Link to="/partners-team">Partners</Link>
       </ul>
-      <p className="nav-registerButton">Register</p>
+      <a className="nav-registerButton">Register</a>
     </nav>
   );
 };
