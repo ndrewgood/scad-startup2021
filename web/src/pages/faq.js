@@ -6,10 +6,18 @@ import Hero from '../components/hero';
 import ResourceCardGrid from '../components/resource-card-grid';
 
 import ResourceCard from '../components/resource-card';
-import FAQQuestion from '../components/faq-question';
 import NumberedTitle from '../components/numbered-title';
 
 import '../styles/faq.scss';
+
+const FAQQuestion = ({number, question, answer}) => {
+  return (
+    <div className="faq-question">
+        <h4>{number}. {question}</h4>
+        <p>{answer}</p>
+    </div>
+  );
+};
 
 const FAQCard = ({sectionTitle, cardNumber, faqs}) => {
 
