@@ -1,5 +1,5 @@
 footer {
-    padding: 30px 0 40px;
+    padding: 50px 0 50px;
     .container {
         display: flex;
         flex-direction: row;
@@ -19,7 +19,11 @@ footer {
             flex-direction: row;
 
             .footer-logo {
+                display: flex;
                 margin-right: 30px;
+            }
+            .footer-logo:hover {
+                text-shadow: 0px 0px 7px #f8676577;
             }
         }
 
@@ -44,9 +48,34 @@ footer {
                     margin-bottom: 20px;
                 }
 
-                li {
+                a {
                     margin: 0 20px 0 0;
+                    padding: 3px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    position: relative;
                 }
+                img {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 50%;
+                    height: 25px;
+                    width: 25px;
+                    // margin-left: 2px;
+                }
+            }
+            .footer-registerButton {
+                margin: auto;
+                transition: .2s;
+            }
+            .footer-registerButton:hover {
+                color: #f86865;
+                text-shadow: 0px 0px 7px #f8676577;
+                cursor: pointer;
             }
         }
     }

@@ -1,7 +1,13 @@
 .theme-main {
-    background-color: lightgray;
+    background-color: #1A1A1A;
     padding-top: 30px;
     padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+    @media only screen and (max-width: 800px) {
+        padding-bottom: 400px;
+    }
+    
 }
 
 .theme-buttonContainer {
@@ -10,22 +16,50 @@
     height: 40px;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #E1E1E1;
+    border-radius: 30px;
+    position: relative;
     button {
+        font-family: 'Circular', sans-serif;
+        font-size: 16px;
         width: 50%;
+        background: none;
+        border: none;
+        color: #C5C5C5;
+        mix-blend-mode: difference;
     }
+    button:focus {
+        outline: none;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+
+.theme-buttonBackground {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: calc(0% - 1px);
+    border-radius: 30px;
+    background-color: #E1E1E1;
+    z-index: -1;
+    transition: .3s left;
+}
+
+.theme-buttonRight {
+    left: calc(50% + 1px);
 }
 
 .theme-animationContainer {
     height: 300px;
-    width: 85vw;
-    max-width: 1000px;
     margin: auto;
     position: relative;
+    padding-bottom: 50px;
 }
 
 .theme-infoContainer {
-    width: 85vw;
-    max-width: 1000px;
     margin: auto;
     padding-top: 20px;
     position: absolute;
@@ -33,4 +67,26 @@
 
 .theme-trackBody {
     width: 500px;
+    color: #C5C5C5;
+    @media only screen and (max-width: 800px) {
+        width: auto;
+    }
+}
+
+.theme-trackHeader {
+    span {
+        color: #FB645B;
+    }
+}
+
+.theme-trackImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    @media only screen and (max-width: 800px) {
+        height: 60%;
+        top: 340px;
+    }
+
 }

@@ -1,6 +1,15 @@
 import React from "react";
 import '../styles/footer.scss'
 
+import FluxLogo from '../assets/svg/footer-flux.svg'
+import ScadproLogo from '../assets/svg/footer-scadpro.svg'
+import InstagramLogo from '../assets/svg/footer-instagram.svg'
+import FacebookLogo from '../assets/svg/footer-facebook.svg'
+import DiscordLogo from '../assets/svg/footer-discord.svg'
+
+
+
+
 
 const Footer = () => {
 
@@ -10,16 +19,16 @@ const Footer = () => {
       <div className="container">
         <div className="footer-logosContainer">
           {/*Change p tag to svg or img but keep the styles*/}
-          <p className="footer-logo">FLUX Logo</p>
-          <p className="footer-logo">SCADpro Logo</p>
+          <a className="footer-logo" target="_blank" href="https://scadflux.com/"><img  src={FluxLogo} alt="Flux Logo" /></a>
+          <a className="footer-logo" target="_blank" href="https://www.scad.edu/about/scadpro"><img src={ScadproLogo} alt="SCADpro Logo" /></a>
         </div>
         <div className="footer-links">
-          <ul className="footer-socialLinks">
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Medium</a></li>
-          </ul>
-          <a href="" className="footer-registerButton">Register</a>
+          <div className="footer-socialLinks">
+            <a target="_blank" href="https://www.instagram.com/scadflux/"><img src={InstagramLogo} alt="Instagram Logo" /></a>
+            <a target="_blank" href="https://www.facebook.com/groups/scadflux"><img src={FacebookLogo} alt="Facebook Logo" /></a>
+            <a target="_blank" href="https://discord.gg/FMJ4tY8"><img src={DiscordLogo} alt="Discord Logo" /></a>
+          </div>
+          <a className="footer-registerButton">Register</a>
         </div>
       </div>
     </footer>
