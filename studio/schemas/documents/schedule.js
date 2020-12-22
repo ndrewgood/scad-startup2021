@@ -23,6 +23,42 @@ export default {
       type: 'string',
     },
     {
+      name: 'description',
+      title: 'Description',
+      type: 'string'
+    },
+    {
+      name: 'requiredAttendance',
+      title: 'Required Attendance Text',
+      type: 'string'
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image'
+    },
+    {
+      name: 'imagePosition',
+      title: 'Image Right?',
+      type: 'boolean',
+    },
+    {
+      name: 'size',
+      title: 'Card Width (Desktop)',
+      type: 'string',
+      options: {
+        list: [{title: '50%', value: '5'}, {title:'40%', value: '4'}, {title:'60%', value: '6'}, {title:'100%', value: 'full'}],
+        layout: 'radio'
+      },
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'background',
+      title: 'Gradient Background',
+      type: 'boolean',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'linkShown',
       title: 'Link Shown?',
       type: 'boolean',

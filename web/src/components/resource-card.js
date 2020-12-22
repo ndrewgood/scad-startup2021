@@ -6,13 +6,13 @@ const resourceCard = ({span, bg, children, direction, type}) => {
   let cardClass ="resourceCard";
 
   switch(span) {
-    case 4:
+    case "4":
       cardClass+=" span-4"
       break;
-    case 5:
+    case "5":
       cardClass+=" span-5"
       break;
-    case 6:
+    case "6":
       cardClass+=" span-6"
       break;
     case "full":
@@ -35,6 +35,9 @@ const resourceCard = ({span, bg, children, direction, type}) => {
   switch(type) {
     case "schedule":
       cardClass+=" schedule-card"
+      break;
+    case "schedule-flipped":
+      cardClass+=" schedule-card flipped"
       break;
     case "faq":
       cardClass+=" faq-card"

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link, graphql, useStaticQuery} from 'gatsby';
 import Page from "../templates/page";
 
 import Hero from '../components/hero'
@@ -7,23 +8,60 @@ import ResourceCard from '../components/resource-card'
 
 import "../styles/schedule.scss"
 
-const ScheduleCard = ({span, bg, type}) => {
+const ScheduleCard = ({span, bg, type, title, date, description, attendance, imagePosition, image}) => {
   return (
-    <ResourceCard span={span} bg={bg} type="schedule">
+    <ResourceCard span={span} bg={bg} type={imagePosition ? "schedule-flipped" : "schedule"}>
         <div className="schedule-card-content">
-          <h3 className="schedule-card-date">Date</h3>
-          <h2 className="schedule-card-title">Title</h2>
-          <p className="schedule-card-description">Description</p>
-          <p className="schedule-card-timeLink">Time & meeting link will be announced soon!</p>
+          <div>
+            <h3 className="schedule-card-date">{date}</h3>
+            <h2 className="schedule-card-title">{title}</h2>
+            <div className="schedule-card-body">
+              <p className="schedule-card-description">{description}</p>
+              {attendance ? (<p className="schedule-card-attendance">{"* " + attendance} </p>) : null}
+            </div>
+          </div>
+          <p className="schedule-card-timeLink">Time & meeting link will be announced soon!</p> 
         </div>
-        <div className="schedule-card-image">
-          {/* Insert Image */}
-        </div>
+        { 
+          image ? (
+            <div className="schedule-card-image">
+              <img src={image.asset.url} alt=""/>
+            </div>
+          ) : null
+        }
     </ResourceCard>
   );
 };
 
 const Schedule = (props) => {
+  const data = useStaticQuery(graphql`
+    query scheduleQuery{
+      allSanitySchedule(sort: {fields: order, order: ASC}) {
+        edges {
+          node {
+            _id
+            background
+            linkShown
+            link
+            title
+            size
+            time
+            description
+            requiredAttendance
+            image {
+              asset {
+                url
+              }
+            }
+            imagePosition
+          }
+        }
+      }
+    }
+  `)
+
+  const scheduleArray = data.allSanitySchedule.edges;
+  //console.log(scheduleArray)
 
   return (
     <Page>
@@ -33,13 +71,21 @@ const Schedule = (props) => {
       />
       <div className="container">
         <ResourceCardGrid>
-          <ScheduleCard span={4}/>
-          <ScheduleCard span={6}/>
-          <ScheduleCard span={5}/>
-          <ScheduleCard span={5}/>
-          <ScheduleCard span={6}/>
-          <ScheduleCard span={4}/>
-          <ScheduleCard span={"full"} bg="gradient"/>
+          {
+            scheduleArray.map((edge) => (
+              <ScheduleCard
+                key={edge.node._id} 
+                span={edge.node.size}
+                bg={edge.node.background ? "gradient" : null}
+                title={edge.node.title}
+                date={edge.node.time}
+                description={edge.node.description}
+                attendance={edge.node.requiredAttendance}
+                image={edge.node.image}
+                imagePosition={edge.node.imagePosition}
+              />
+            ))
+          }
         </ResourceCardGrid>
       </div>
     </Page>
