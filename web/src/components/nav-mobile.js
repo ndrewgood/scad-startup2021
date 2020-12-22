@@ -19,6 +19,16 @@ const NavMobile = () => {
             <div></div>
             <button onClick={() => setMenuStatus(!menuStatus)} className="mobileNav-x"><img src={MenuX} alt="Close Button" /></button>
           </div>
+          <div className="mobileNav-menuLinks">
+            <Link to="/theme" className="mobileNav-startupLogo">Theme</Link>
+            <Link to="/schedule" className="mobileNav-startupLogo">Schedule</Link>
+            <Link to="/deliverables" className="mobileNav-startupLogo">Deliverables</Link>
+            <Link to="/faq" className="mobileNav-startupLogo">FAQ</Link>
+            <Link to="/schedule" className="mobileNav-startupLogo">Showcase</Link>
+            <Link to="/deliverables" className="mobileNav-startupLogo">Experts</Link>
+            <Link to="/faq" className="mobileNav-startupLogo">Partners</Link>
+
+          </div>
         </div>
       </div>
       <nav className="mobileNav">
