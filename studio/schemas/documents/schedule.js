@@ -34,8 +34,8 @@ export default {
     },
     {
       name: 'image',
-      title: 'Image',
-      type: 'image'
+      title: 'Images',
+      type: 'responsiveImage'
     },
     {
       name: 'imagePosition',

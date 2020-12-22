@@ -15,6 +15,7 @@ import seoSettings from './documents/seoSettings'
 // Object types
 import simplePortableText from './objects/simplePortableText'
 import qna from './objects/qna'
+import responsiveImage from './objects/responsiveImage'
 
 
 
@@ -31,6 +32,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     simplePortableText,
     qna,
+    responsiveImage,
     // The following are document types which will appear
     // in the studio.
     partner,

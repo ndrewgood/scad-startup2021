@@ -25,7 +25,7 @@ const ScheduleCard = ({span, bg, type, title, date, description, attendance, ima
         { 
           image ? (
             <div className="schedule-card-image">
-              <img src={image.asset.url} alt=""/>
+              <img src={image.imageWeb.asset.url} alt=""/>
             </div>
           ) : null
         }
@@ -49,8 +49,15 @@ const Schedule = (props) => {
             description
             requiredAttendance
             image {
-              asset {
-                url
+              imageMobile {
+                asset {
+                  url
+                }
+              }
+              imageWeb {
+                asset {
+                  url
+                }
               }
             }
             imagePosition
