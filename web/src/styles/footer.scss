@@ -37,37 +37,6 @@ footer {
                 margin-bottom: 20px;
             }
 
-            .footer-socialLinks {
-                display: flex;
-                flex-direction: row;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                
-                @media only screen and (max-width: 650px) {
-                    margin-bottom: 20px;
-                }
-
-                a {
-                    margin: 0 20px 0 0;
-                    padding: 3px;
-                    border: 1px solid white;
-                    border-radius: 50%;
-                    height: 30px;
-                    width: 30px;
-                    display: flex;
-                    position: relative;
-                }
-                img {
-                    position: absolute;
-                    transform: translate(-50%, -50%);
-                    left: 50%;
-                    top: 50%;
-                    height: 25px;
-                    width: 25px;
-                    // margin-left: 2px;
-                }
-            }
             .footer-registerButton {
                 margin: auto;
                 transition: .2s;
@@ -78,5 +47,37 @@ footer {
                 cursor: pointer;
             }
         }
+    }
+}
+
+.footer-socialLinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    @media only screen and (max-width: 650px) {
+        margin-bottom: 20px;
+    }
+
+    a {
+        margin: 0 20px 0 0;
+        padding: 3px;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        position: relative;
+    }
+    img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        height: 25px;
+        width: 25px;
+        // margin-left: 2px;
     }
 }

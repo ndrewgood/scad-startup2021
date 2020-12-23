@@ -2,8 +2,10 @@
     background-color: #1A1A1A;
     padding-top: 30px;
     padding-bottom: 60px;
+    margin-top: 20px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
     @media only screen and (max-width: 800px) {
         padding-bottom: 400px;
     }
@@ -19,6 +21,7 @@
     border: 1px solid #E1E1E1;
     border-radius: 30px;
     position: relative;
+    z-index: 2;
     button {
         font-family: 'Circular', sans-serif;
         font-size: 16px;
@@ -88,5 +91,7 @@
         height: 60%;
         top: 340px;
     }
-
+    @media only screen and (max-width: 450px) {
+        top: 380px;
+    }
 }

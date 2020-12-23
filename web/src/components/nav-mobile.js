@@ -1,10 +1,44 @@
 import React, { useState } from "react";
 import { Link } from 'gatsby';
+import { Transition } from 'react-transition-group';
+
 import '../styles/nav.scss'
 
 import StartUp from '../assets/svg/startup-logo.svg'
 import Hamburger from '../assets/svg/mobileNav-hamburger.svg'
 import MenuX from '../assets/svg/mobileNav-x.svg'
+import InstagramLogo from '../assets/svg/footer-instagram.svg'
+import FacebookLogo from '../assets/svg/footer-facebook.svg'
+import DiscordLogo from '../assets/svg/footer-discord.svg'
+
+//Duration of Animation
+const duration = 300;
+
+const defaultStyleMenu = {
+  transition: `${duration}ms ease-in-out`,
+  transitionProperty: "right",
+  right: '-80%'
+}
+
+const defaultStyleBackground = {
+  transition: `${duration}ms ease-in-out`,
+  transitionProperty: "opacity",
+  opacity: '0'
+}
+
+const transitionStylesMenu = {
+  entering: {right: '-80%', display: "flex"},
+  entered:  {right: "0%" },
+  exiting:  {right: '-80%'},
+  exited:  {right: '-80%', display: "none"},
+};
+
+const transitionStylesBackground = {
+  entering: {opacity: 0, display: "flex" },
+  entered:  {opacity: 1 },
+  exiting:  {opacity: 0 },
+  exited:  {opacity: 0, display: "none" },
+};
 
 
 const NavMobile = () => {
@@ -13,30 +47,46 @@ const NavMobile = () => {
 
   return (
     <>
-      <div className={menuStatus ? "mobileNav-menu showMenu" : "mobileNav-menu"}>
-        <div className="mobileNav-menuContainer">
-          <div className="mobileNav-menuTop">
-            <div></div>
-            <button onClick={() => setMenuStatus(!menuStatus)} className="mobileNav-x"><img src={MenuX} alt="Close Button" /></button>
+      <Transition in={menuStatus} timeout={menuStatus ? 0 : duration}>
+        {state => (
+          <div className="mobileNav-menu" style={{
+            ...defaultStyleBackground,
+            ...transitionStylesBackground[state]
+          }}>
+            <div className="mobileNav-menuContainer" style={{
+            ...defaultStyleMenu,
+            ...transitionStylesMenu[state]
+          }}>
+              <div className="mobileNav-menuTop">
+                <div></div>
+                <button onClick={() => setMenuStatus(!menuStatus)} className="mobileNav-x"><img src={MenuX} alt="Close Button" /></button>
+              </div>
+              <div className="mobileNav-menuLinks">
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/theme" className="mobileNav-startupLogo">Theme</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/schedule" className="mobileNav-startupLogo">Schedule</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/deliverables" className="mobileNav-startupLogo">Deliverables</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/faq" className="mobileNav-startupLogo">FAQ</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/showcase" className="mobileNav-startupLogo">Showcase</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/experts" className="mobileNav-startupLogo">Experts</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/partners-team" className="mobileNav-startupLogo">Partners</Link>
+              </div>
+              <a className="nav-registerButton mobileNav-registerButton">Register</a>
+              <div id="mobileNav-socialLinks" className="footer-socialLinks">
+                <a target="_blank" href="https://www.instagram.com/scadflux/"><img src={InstagramLogo} alt="Instagram Logo" /></a>
+                <a target="_blank" href="https://www.facebook.com/groups/scadflux"><img src={FacebookLogo} alt="Facebook Logo" /></a>
+                <a target="_blank" href="https://discord.gg/FMJ4tY8"><img src={DiscordLogo} alt="Discord Logo" /></a>
+              </div>
+            </div>
           </div>
-          <div className="mobileNav-menuLinks">
-            <Link to="/theme" className="mobileNav-startupLogo">Theme</Link>
-            <Link to="/schedule" className="mobileNav-startupLogo">Schedule</Link>
-            <Link to="/deliverables" className="mobileNav-startupLogo">Deliverables</Link>
-            <Link to="/faq" className="mobileNav-startupLogo">FAQ</Link>
-            <Link to="/schedule" className="mobileNav-startupLogo">Showcase</Link>
-            <Link to="/deliverables" className="mobileNav-startupLogo">Experts</Link>
-            <Link to="/faq" className="mobileNav-startupLogo">Partners</Link>
-
-          </div>
-        </div>
-      </div>
+        )} 
+        </Transition>
       <nav className="mobileNav">
         <div className="mobileNav-container">
           <Link to="/" className="mobileNav-startupLogo"><img src={StartUp} alt="StartUp Logo" /></Link>
         <button onClick={() => setMenuStatus(!menuStatus)} className="mobileNav-button"><img src={Hamburger} alt="Hamburger Button" /></button>
         </div>
-      </nav> 
+      </nav>
+
     </>
   );
 };
