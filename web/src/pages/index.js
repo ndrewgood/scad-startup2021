@@ -58,17 +58,15 @@ const IndexPage = props => {
                 <br />
                 It’s pretty much Shark Tank, just not on TV (yet).
               </p>
-              </div>
-                  <div className="about-image">
+            </div>
+            <div className="about-image">
               <img src={IllyOne} alt="illy" />
             </div>
-            </div>
-    
-
+          </div>
         </div>
 
         {/* Gallery */}
-        <div >
+        <div>
           <img className="gallery-img" src={Gallery} alt="gallery" />
         </div>
 
