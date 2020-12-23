@@ -3,6 +3,10 @@ main{
     overflow-x: hidden;
 }
 
+img{
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 768px){
     html,
     body{
@@ -46,8 +50,8 @@ a.middle:hover:before {
     flex-direction: column;
 
     img:nth-child(3){
-        margin-top: 35px;
-        margin-bottom: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
