@@ -1,8 +1,7 @@
 import React from "react";
 import Page from "../templates/page";
 
-import ScrollAnimation from 'react-animate-on-scroll';
-
+import ScrollAnimation from "react-animate-on-scroll";
 
 // images
 import Ideate from "../assets/svg/Ideate.svg";
@@ -49,8 +48,23 @@ const IndexPage = props => {
                 <span className="big-desc">
                   {" "}
                   SCAD StartUp is our annual, week-long design sprint hosted by{" "}
-                  <a className="middle" href="https://scadflux.com" target="_blank" rel="noopener noreferrer"><span className="blue-highlight">FLUX - the UX club </span></a> in collaboration with{" "}
-                  <a className="middle" href="https://scad.edu/scadpro" target="_blank" rel="noopener noreferrer"><span className="blue-highlight">SCADpro</span></a>{" "}
+                  <a
+                    className="middle"
+                    href="https://scadflux.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="blue-highlight">FLUX - the UX club </span>
+                  </a>{" "}
+                  in collaboration with{" "}
+                  <a
+                    className="middle"
+                    href="https://scad.edu/scadpro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="blue-highlight">SCADpro</span>
+                  </a>{" "}
                 </span>
                 <br />
                 <br />
@@ -63,7 +77,7 @@ const IndexPage = props => {
                 It’s pretty much Shark Tank, just not on TV (yet).
               </p>
             </div>
-            <div >
+            <div>
               <img className="about-image" src={IllyOne} alt="illy" />
             </div>
           </div>
@@ -77,42 +91,42 @@ const IndexPage = props => {
         {/* Startup Numbers */}
         <div className="stats-section">
           <div className="stats-container">
-          <p className="stats-title">In 2020, StartUp Reached...</p>
-          <div className="startup-numbers">
-            <div>
-              <img className="three-hundred" src={ThreeHundred} alt="three hundred" />
-              <p>Individuals</p>
-            </div>
+            <p className="stats-title">In 2020, StartUp Reached...</p>
+            <div className="startup-numbers">
+              <div>
+                <img className="three-hundred" src={ThreeHundred} alt="three hundred" />
+                <p>Individuals</p>
+              </div>
 
-            <div>
-              <img src={Fifty} alt="thirty" />
-              <p>Teams</p>
-            </div>
+              <div>
+                <img src={Fifty} alt="thirty" />
+                <p>Teams</p>
+              </div>
 
-            <div>
-              <img src={TwentySix} alt="three hundred" />
-              <p>Majors</p>
-            </div>
+              <div>
+                <img src={TwentySix} alt="three hundred" />
+                <p>Majors</p>
+              </div>
 
-            <div>
-              <img src={Thirty} alt="three hundred" />
-              <p>Mentors</p>
+              <div>
+                <img src={Thirty} alt="three hundred" />
+                <p>Mentors</p>
+              </div>
             </div>
           </div>
-          </div>
-        </div> 
+        </div>
 
         {/* are you ready for this year */}
         <div className="balloon-wrapper balloons">
-        <ScrollAnimation  style={{height:"100vh"}} animateIn="fadeIn" delay="500" >
-        <img className="balloons-width fade-in" src={Balloons} alt="balloons" />
-        </ScrollAnimation>
-        <div className="ready">
-          <img src={TopLine} />
-          <p>Are you READY for this year?</p>
-          {/* <img src={Balloons} alt="confetti" /> */}
-          <img src={BottomLine} />
-        </div>
+          <ScrollAnimation style={{ height: "100vh" }} animateIn="fadeIn" delay="500">
+            <img className="balloons-width fade-in" src={Balloons} alt="balloons" />
+          </ScrollAnimation>
+          <div className="ready">
+            <img src={TopLine} />
+            <p>Are you READY for this year?</p>
+            {/* <img src={Balloons} alt="confetti" /> */}
+            <img src={BottomLine} />
+          </div>
         </div>
 
         {/* StartUp 2021 */}
