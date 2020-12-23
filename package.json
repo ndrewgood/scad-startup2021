@@ -17,6 +17,8 @@
     "lerna": "^3.13.1"
   },
   "dependencies": {
-    "react-magnifier": "^3.0.4"
+    "react-animate-on-scroll": "^2.1.5",
+    "react-magnifier": "^3.0.4",
+    "react-native-animated-emoji": "^0.1.4"
   }
 }

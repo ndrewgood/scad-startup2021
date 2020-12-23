@@ -1,6 +1,9 @@
 import React from "react";
 import Page from "../templates/page";
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
+
 // images
 import Ideate from "../assets/svg/Ideate.svg";
 import Design from "../assets/svg/Design.svg";
@@ -14,6 +17,7 @@ import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
 import Gallery from "../assets/images/gallery.png";
+import Balloons from "../assets/gif/balloons.gif";
 // import StartupBig from "../assets/svg/StartupBig.svg";
 
 // scss
@@ -23,7 +27,7 @@ import "../styles/general.scss";
 const IndexPage = props => {
   return (
     <Page>
-      <main className="">
+      <main className="main-body">
         <div className="hero container">
           <div className="hero-words">
             <h2>With StartUp, you can...</h2>
@@ -45,8 +49,8 @@ const IndexPage = props => {
                 <span className="big-desc">
                   {" "}
                   SCAD StartUp is our annual, week-long design sprint hosted by{" "}
-                  <span className="blue-highlight">FLUX - the UX club </span> in collaboration with{" "}
-                  <span className="blue-highlight">SCADpro</span>{" "}
+                  <a className="middle" href="https://scadflux.com" target="_blank" rel="noopener noreferrer"><span className="blue-highlight">FLUX - the UX club </span></a> in collaboration with{" "}
+                  <a className="middle" href="https://scad.edu/scadpro" target="_blank" rel="noopener noreferrer"><span className="blue-highlight">SCADpro</span></a>{" "}
                 </span>
                 <br />
                 <br />
@@ -59,8 +63,8 @@ const IndexPage = props => {
                 It’s pretty much Shark Tank, just not on TV (yet).
               </p>
             </div>
-            <div className="about-image">
-              <img src={IllyOne} alt="illy" />
+            <div >
+              <img className="about-image" src={IllyOne} alt="illy" />
             </div>
           </div>
         </div>
@@ -72,10 +76,11 @@ const IndexPage = props => {
 
         {/* Startup Numbers */}
         <div className="stats-section">
-          <p className="">In 2020, StartUp Reached...</p>
+          <div className="stats-container">
+          <p className="stats-title">In 2020, StartUp Reached...</p>
           <div className="startup-numbers">
             <div>
-              <img src={ThreeHundred} alt="three hundred" />
+              <img className="three-hundred" src={ThreeHundred} alt="three hundred" />
               <p>Individuals</p>
             </div>
 
@@ -94,13 +99,20 @@ const IndexPage = props => {
               <p>Mentors</p>
             </div>
           </div>
-        </div>
+          </div>
+        </div> 
 
         {/* are you ready for this year */}
-        <div className="container ready">
+        <div className="balloon-wrapper balloons">
+        <ScrollAnimation  style={{height:"100vh"}} animateIn="fadeIn" delay="500" >
+        <img className="balloons-width fade-in" src={Balloons} alt="balloons" />
+        </ScrollAnimation>
+        <div className="ready">
           <img src={TopLine} />
           <p>Are you READY for this year?</p>
+          {/* <img src={Balloons} alt="confetti" /> */}
           <img src={BottomLine} />
+        </div>
         </div>
 
         {/* StartUp 2021 */}
@@ -113,7 +125,7 @@ const IndexPage = props => {
           </h1>
           <p>
             StartUp 2021 will be <span className="red-highlight">fully virtual</span> and have two
-            different tracks ! These tracks allow participants from freely coming up with creative
+            different tracks! These tracks allow participants from freely coming up with creative
             business solutions to giving back to the community by helping small businesses that have
             been nagatively impacted by the global pandemic.
           </p>
