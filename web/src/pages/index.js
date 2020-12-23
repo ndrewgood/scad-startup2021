@@ -13,6 +13,7 @@ import Fifty from "../assets/svg/Fifty.svg";
 import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
+import Gallery from "../assets/images/gallery.png";
 // import StartupBig from "../assets/svg/StartupBig.svg";
 
 // scss
@@ -36,7 +37,7 @@ const IndexPage = props => {
         {/* about section */}
         <div className="about">
           <div className="about-position">
-            <div className="container about-text">
+            <div className="about-text">
               <h1>
                 One Week to <span className="red-highlight">Design</span>
               </h1>
@@ -57,16 +58,23 @@ const IndexPage = props => {
                 <br />
                 It’s pretty much Shark Tank, just not on TV (yet).
               </p>
-            </div>
-            <div className="about-image">
+              </div>
+                  <div className="about-image">
               <img src={IllyOne} alt="illy" />
             </div>
-          </div>
+            </div>
+    
+
+        </div>
+
+        {/* Gallery */}
+        <div >
+          <img className="gallery-img" src={Gallery} alt="gallery" />
         </div>
 
         {/* Startup Numbers */}
         <div className="stats-section">
-          <p className="container">In 2020, StartUp Reached...</p>
+          <p className="">In 2020, StartUp Reached...</p>
           <div className="startup-numbers">
             <div>
               <img src={ThreeHundred} alt="three hundred" />

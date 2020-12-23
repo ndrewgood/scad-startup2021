@@ -20,6 +20,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 .down-arrow{
@@ -29,17 +30,36 @@ main{
 
 .about{
     background-color: #1A1A1A;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     p{
         font-size: 18px;
+        width: 75%;
+        @media only screen and (max-width:650px){
+            width: 100%;
+        }
     }
+}
+
+.about-image{
+    float: right;
+    display: inline-block;
 }
 
 .about-position{
     display: flex;
+
+    @media only screen and (max-width:650px){
+        flex-direction: column;
+    }
 }
 
 .about-text{
-    padding: 100px 0;
+    padding: 100px 15%;
+    position: relative;
+    display: block;
 }
 
 
@@ -60,6 +80,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    @media only screen and (max-width:650px){
+        flex-direction: column; 
+    }
     
     div{
         margin: 0 25px;
@@ -96,4 +120,8 @@ main{
     p{
         font-size: 22px;
     }
+}
+
+.gallery-img{
+    width: 100%;
 }
