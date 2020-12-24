@@ -1,0 +1,97 @@
+.theme-main {
+    background-color: #1A1A1A;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media only screen and (max-width: 800px) {
+        padding-bottom: 400px;
+    }
+    
+}
+
+.theme-buttonContainer {
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E1E1E1;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    button {
+        font-family: 'Circular', sans-serif;
+        font-size: 16px;
+        width: 50%;
+        background: none;
+        border: none;
+        color: #C5C5C5;
+        mix-blend-mode: difference;
+    }
+    button:focus {
+        outline: none;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+
+.theme-buttonBackground {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: calc(0% - 1px);
+    border-radius: 30px;
+    background-color: #E1E1E1;
+    z-index: -1;
+    transition: .3s left;
+}
+
+.theme-buttonRight {
+    left: calc(50% + 1px);
+}
+
+.theme-animationContainer {
+    height: 300px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.theme-infoContainer {
+    margin: auto;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.theme-trackBody {
+    width: 500px;
+    color: #C5C5C5;
+    @media only screen and (max-width: 800px) {
+        width: auto;
+    }
+}
+
+.theme-trackHeader {
+    span {
+        color: #FB645B;
+    }
+}
+
+.theme-trackImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    @media only screen and (max-width: 800px) {
+        height: 60%;
+        top: 340px;
+    }
+    @media only screen and (max-width: 450px) {
+        top: 380px;
+    }
+}
