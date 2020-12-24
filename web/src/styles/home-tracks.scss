@@ -1,4 +1,4 @@
-.theme-main {
+.track-main {
     background-color: #1A1A1A;
     padding-top: 30px;
     padding-bottom: 60px;
@@ -12,8 +12,8 @@
     
 }
 
-.theme-buttonContainer {
-    margin: auto;
+.track-buttonContainer {
+    // margin-left: auto;
     width: 200px;
     height: 40px;
     display: flex;
@@ -40,7 +40,7 @@
 }
 
 
-.theme-buttonBackground {
+.track-buttonBackground {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -51,38 +51,42 @@
     transition: .3s left;
 }
 
-.theme-buttonRight {
+.track-buttonRight {
     left: calc(50% + 1px);
 }
 
-.theme-animationContainer {
+.track-animationContainer {
     height: 300px;
-    margin: auto;
-    position: relative;
     padding-bottom: 50px;
 }
 
-.theme-infoContainer {
-    margin: auto;
+.track-infoContainer { 
     padding-top: 20px;
     position: absolute;
-}
+    left: 15%;
 
-.theme-trackBody {
-    width: 500px;
-    color: #C5C5C5;
-    @media only screen and (max-width: 800px) {
-        width: auto;
+    @media only screen and (max-width:650px){
+        left: 5%;
     }
 }
 
-.theme-trackHeader {
+.track-trackBody {
+    width: 60%;
+    // margin-left: auto;
+    color: #C5C5C5;
+    @media only screen and (max-width: 800px) {
+        width: 60%;
+    }
+}
+
+.track-trackHeader {
     span {
         color: #FB645B;
     }
 }
 
-.theme-trackImage {
+
+.track-trackImage {
     position: absolute;
     top: 0;
     right: 0;
@@ -94,4 +98,50 @@
     @media only screen and (max-width: 450px) {
         top: 380px;
     }
+}
+
+.track-right{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.track-grid {
+    background-color: #1a1a1a;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 5% 0;
+
+    @media only screen and (max-width:650px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+.track-container{
+    background-color: #0d0d0d;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15%;
+
+    @media only screen and (max-width:650px){
+        padding-left: 5%; 
+        border-radius: 0;
+    }
+}
+
+i{
+    color: #677CFC;
 }
