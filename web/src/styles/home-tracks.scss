@@ -1,147 +1,144 @@
 .track-main {
-    background-color: #1A1A1A;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    margin-top: 20px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    @media only screen and (max-width: 800px) {
-        padding-bottom: 400px;
-    }
-    
+  background-color: #1a1a1a;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  @media only screen and (max-width: 800px) {
+    padding-bottom: 400px;
+  }
 }
 
 .track-buttonContainer {
-    // margin-left: auto;
-    width: 200px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #E1E1E1;
-    border-radius: 30px;
-    position: relative;
-    z-index: 2;
-    button {
-        font-family: 'Circular', sans-serif;
-        font-size: 16px;
-        width: 50%;
-        background: none;
-        border: none;
-        color: #C5C5C5;
-        mix-blend-mode: difference;
-    }
-    button:focus {
-        outline: none;
-    }
-    button:hover {
-        cursor: pointer;
-    }
+  // margin-left: auto;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e1e1e1;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  button {
+    font-family: "Circular", sans-serif;
+    font-size: 16px;
+    width: 50%;
+    background: none;
+    border: none;
+    color: #c5c5c5;
+    mix-blend-mode: difference;
+  }
+  button:focus {
+    outline: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
 }
 
-
 .track-buttonBackground {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: calc(0% - 1px);
-    border-radius: 30px;
-    background-color: #E1E1E1;
-    z-index: -1;
-    transition: .3s left;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: calc(0% - 1px);
+  border-radius: 30px;
+  background-color: #e1e1e1;
+  z-index: -1;
+  transition: 0.3s left;
 }
 
 .track-buttonRight {
-    left: calc(50% + 1px);
+  left: calc(50% + 1px);
 }
 
 .track-animationContainer {
-    height: 300px;
-    padding-bottom: 50px;
+  height: 300px;
+  padding-bottom: 50px;
 }
 
-.track-infoContainer { 
-    padding-top: 20px;
-    position: absolute;
-    left: 15%;
+.track-infoContainer {
+  padding-top: 20px;
+  position: absolute;
+  left: 15%;
 
-    @media only screen and (max-width:650px){
-        left: 5%;
-    }
+  @media only screen and (max-width: 650px) {
+    left: 5%;
+  }
 }
 
 .track-trackBody {
+  width: 60%;
+  // margin-left: auto;
+  color: #c5c5c5;
+  @media only screen and (max-width: 800px) {
     width: 60%;
-    // margin-left: auto;
-    color: #C5C5C5;
-    @media only screen and (max-width: 800px) {
-        width: 60%;
-    }
+  }
 }
 
 .track-trackHeader {
-    span {
-        color: #FB645B;
-    }
+  span {
+    color: #fb645b;
+  }
 }
-
 
 .track-trackImage {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    @media only screen and (max-width: 800px) {
-        height: 60%;
-        top: 340px;
-    }
-    @media only screen and (max-width: 450px) {
-        top: 380px;
-    }
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  @media only screen and (max-width: 800px) {
+    height: 60%;
+    top: 340px;
+  }
+  @media only screen and (max-width: 450px) {
+    top: 380px;
+  }
 }
 
-.track-right{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+.track-right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .track-grid {
-    background-color: #1a1a1a;
-    margin-top: 100px;
+  background-color: #1a1a1a;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 5% 0;
+
+  @media only screen and (max-width: 650px) {
     display: grid;
-    grid-template-columns: 33% 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding: 5% 0;
-
-    @media only screen and (max-width:650px){
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
+  }
 }
 
-.track-container{
-    background-color: #0d0d0d;
-    border-top-left-radius: 45px;
-    border-bottom-left-radius: 45px;
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 15%;
+.track-container {
+  background-color: #0d0d0d;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15%;
 
-    @media only screen and (max-width:650px){
-        padding-left: 5%; 
-        border-radius: 0;
-    }
+  @media only screen and (max-width: 650px) {
+    padding-left: 5%;
+    border-radius: 0;
+  }
 }
 
-i{
-    color: #677CFC;
+i {
+  color: #677cfc;
 }
