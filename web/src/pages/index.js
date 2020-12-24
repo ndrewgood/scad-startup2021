@@ -16,7 +16,6 @@ import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
 import Gallery from "../assets/images/gallery.png";
-import Balloons from "../assets/gif/balloons.gif";
 import Confetti from "../assets/gif/confetti.gif";
 import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
