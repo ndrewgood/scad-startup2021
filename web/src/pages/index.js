@@ -48,23 +48,6 @@ const transitionStyles = {
   exited: { right: -30, opacity: 0 }
 };
 
-//Default styles of images
-const defaultStyleImage = {
-  transition: `${duration}ms ease-in-out`,
-  transitionProperty: "opacity, right",
-  // transitionDelay: '0ms'
-  opacity: 0,
-  right: 0
-};
-
-//Changing styles depending on state of mount
-const transitionStylesImage = {
-  entering: { right: -30, opacity: 1, transitionDelay: `${duration}ms` },
-  entered: { right: 0, opacity: 1 },
-  exiting: { right: -30, opacity: 0 },
-  exited: { right: -30, opacity: 0 }
-};
-
 const TrackOne = ({ in: inProp }) => (
   //rtg component, in determines when to turn on and off the component
   <Transition in={inProp} timeout={duration}>
@@ -226,10 +209,10 @@ const IndexPage = props => {
             <img className="balloons-width fade-in" src={Confetti} alt="balloons" />
           </ScrollAnimation>
           <div className="ready">
-            <img src={TopLine} />
+            <img src={TopLine} alt="top line" />
             <p>Are you READY for this year?</p>
             {/* <img src={Balloons} alt="confetti" /> */}
-            <img src={BottomLine} />
+            <img src={BottomLine} alt="bottom-line" />
           </div>
         </div>
 
@@ -263,7 +246,7 @@ const IndexPage = props => {
                 className={
                   track === 1
                     ? "track-buttonBackground"
-                    : "track-buttonBackground track-buttonright"
+                    : "track-buttonBackground track-rightbutton"
                 }
               ></div>
             </div>
