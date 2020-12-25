@@ -27,6 +27,8 @@ import "../styles/hero-home.scss";
 import "../styles/general.scss";
 import "../styles/home-tracks.scss";
 
+
+
 // slider
 //Duration of Animation
 const duration = 300;
