@@ -219,7 +219,7 @@ const IndexPage = props => {
 
         <AliceCarousel
         mouseTracking
-        // autoPlay
+        autoPlay
         autoPlayInterval="1500"
         infinite
         items={items}
