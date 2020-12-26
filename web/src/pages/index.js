@@ -37,6 +37,7 @@ import eleven from "../assets/carousel/StartUp_11.jpg";
 import twelve from "../assets/carousel/StartUp_12.jpg";
 import thirteen from "../assets/carousel/StartUp_13.jpg";
 import fourteen from "../assets/carousel/StartUp_14.jpg";
+import blue from "../assets/images/blue.png";
 
 // scss
 import "../styles/hero-home.scss";
@@ -215,14 +216,18 @@ const IndexPage = props => {
         {/* <div>
           <img className="gallery-img" src={Gallery} alt="gallery" />
         </div> */}
+
         <AliceCarousel
         mouseTracking
-        autoPlay
+        // autoPlay
         autoPlayInterval="1500"
         infinite
         items={items}
         responsive={responsive}
     />
+
+
+
 
 
         {/* Startup Numbers */}
