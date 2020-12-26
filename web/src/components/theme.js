@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Page from "../templates/page";
 import { Transition } from 'react-transition-group';
 
-import Hero from '../components/hero'
+import Hero from './hero'
 
 import '../styles/theme.scss'
 
@@ -104,7 +103,7 @@ const Theme = (props) => {
   const [track, setTrack] = useState(1);
 
   return (
-    <Page>
+    <>
       <Hero 
         smallHeader={"StartUp 2021 - Two Track System"} 
         bigHeader={["Two Ways", <br key="ugh"/>,  "To Design", <br key="ugh2"/>, "Fully Virtual"]}
@@ -138,7 +137,7 @@ const Theme = (props) => {
 
       </div>
       {/* Footer */}
-    </Page>
+    </>
   );
 };
 

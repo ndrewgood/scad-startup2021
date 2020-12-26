@@ -62,9 +62,8 @@ const NavMobile = () => {
                 <button onClick={() => setMenuStatus(!menuStatus)} className="mobileNav-x"><img src={MenuX} alt="Close Button" /></button>
               </div>
               <div className="mobileNav-menuLinks">
-                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/theme" className="mobileNav-startupLogo">Theme</Link>
-                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/schedule" className="mobileNav-startupLogo">Schedule</Link>
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/deliverables" className="mobileNav-startupLogo">Deliverables</Link>
+                <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/schedule" className="mobileNav-startupLogo">Schedule</Link>
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/faq" className="mobileNav-startupLogo">FAQ</Link>
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/showcase" className="mobileNav-startupLogo">Showcase</Link>
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/experts" className="mobileNav-startupLogo">Experts</Link>

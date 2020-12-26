@@ -11,9 +11,8 @@ const Nav = () => {
     <nav className="desktopNav">
       <Link to="/" className="nav-startupLogo"><img src={StartUp} alt="StartUp Logo" /></Link>
       <ul className="nav-itemContainer">
-        <Link activeClassName="nav-active" to="/theme">Theme</Link>
-        <Link activeClassName="nav-active" to="/schedule">Schedule</Link>
         <Link activeClassName="nav-active" to="/deliverables">Deliverables</Link>
+        <Link activeClassName="nav-active" to="/schedule">Schedule</Link>
         <Link activeClassName="nav-active" to="/faq">FAQ</Link>
         <Link activeClassName="nav-active" to="/showcase">Showcase</Link>
         <div className="nav-subMenuContainer">

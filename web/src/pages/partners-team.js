@@ -1,8 +1,9 @@
 import React from "react";
+import {useStaticQuery} from 'gatsby';
 import Page from "../templates/page";
 
 import Hero from '../components/hero'
-import Henry from '../assets/images/henry-test.png'
+import ComingSoon from '../assets/images/coming-soon.png'
 
 import '../styles/partners-team.scss'
 
@@ -11,17 +12,41 @@ const TeamCard = (props) => {
   let lname = props.name.split(" ")[1];
   console.log(fname);
   return(
-    <a href="/"className="partners-team-teamCard">
-    <img src={Henry} alt="" srcset=""/>
+    <a href={props.link} className="partners-team-teamCard">
+    <img src={props.picture} alt="" srcset=""/>
     <div>
       <h3>{fname}<br/>{lname}</h3>
-      <p>{props.role}</p>
+      <p>{props.title}</p>
     </div>
   </a>
   )
 }
 
 const PartnersTeam = (props) => {
+
+  const data = useStaticQuery(graphql`
+  query teamQuery {
+    allSanityStartupTeamMember(sort: {fields: order}) {
+      edges {
+        node {
+          name
+          link
+          picture {
+            asset {
+              url
+            }
+          }
+          title
+          shown
+        }
+      }
+    }
+  }
+  
+`)
+
+const teamArray = data.allSanityStartupTeamMember.edges;
+
 
   return (
     <Page>
@@ -31,24 +56,25 @@ const PartnersTeam = (props) => {
       />
       <div className="partners-team-partners">
         <div className="partners-team-partners-info container">
-          <h2>Our Partners<br /> and Supporters</h2>
+          <h2><span>Our Partners</span><br /> and Supporters</h2>
         </div>
+        <img className="partners-team-comingSoon" src={ComingSoon} alt=""/>
       </div>
-      <div className="partners-team-team">
-        <h2>The Amazing StartUp 2021 Team</h2>
+      <div className="partners-team-team container">
+        <h2>The Amazing<br /><span>StartUp 2021 Team</span></h2>
         <div className="partners-team-teamCardsGrid container">
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-          <TeamCard name="Henry Tran" role="Co-Director"/>
-
+          {
+            teamArray.map((edge) => (
+            edge.node.shown === true ?
+              <TeamCard 
+                name={edge.node.name}
+                picture={edge.node.picture.asset.url}
+                title={edge.node.title}
+                link={edge.node.link}
+              /> :
+              null
+            ))
+          }
         </div>
       </div>
     </Page>

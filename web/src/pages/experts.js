@@ -2,6 +2,8 @@ import React from "react";
 import Page from "../templates/page";
 
 import Hero from '../components/hero'
+import ComingSoon from '../assets/images/coming-soon.png'
+
 
 
 const ExpertsPage = (props) => {
@@ -10,9 +12,14 @@ const ExpertsPage = (props) => {
     <Page>
       <Hero 
         smallHeader={"Shout out to our"} 
-        bigHeader={["Pretty Solid", <br key="ugh"/>, "Experts"]}
+        bigHeader={["Experts and", <br key="ugh"/>, "Mentors"]}
       />
-      <p>Experts</p>
+      <div className="partners-team-partners">
+        <div className="partners-team-partners-info container">
+          <h2>StartUp<br /><span>Experts and Mentors</span></h2>
+        </div>
+        <img className="partners-team-comingSoon" src={ComingSoon} alt=""/>
+      </div>
     </Page>
   );
 };

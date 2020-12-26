@@ -5,6 +5,7 @@ import Hero from '../components/hero'
 import ResourceCardGrid from '../components/resource-card-grid'
 import ResourceCard from '../components/resource-card' 
 import NumberedTitle from '../components/numbered-title'
+import Theme from '../components/theme'
 
 import deckImage from '../assets/images/deckImage.png'
 import businessModelImage from '../assets/images/businessModelImage.png'
@@ -29,6 +30,7 @@ const Deliverables = (props) => {
 
   return (
     <Page>
+      <Theme />
       <Hero 
         smallHeader={"Project Deliverables"} 
         bigHeader={["Show Your", <br key="ugh"/>,  "Creative", <br key="ugh2"/>, "Ideas"]}
