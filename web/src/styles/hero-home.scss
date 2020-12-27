@@ -131,6 +131,10 @@ a.middle:hover:before {
   justify-content: center;
   padding-bottom: 5%;
 
+  img{
+    pointer-events: none;
+  }
+
   @media only screen and (max-width: 650px) {
     flex-direction: column;
     align-items: flex-start;

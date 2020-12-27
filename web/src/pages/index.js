@@ -17,7 +17,6 @@ import Fifty from "../assets/svg/Fifty.svg";
 import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
-import Gallery from "../assets/images/gallery.png";
 import Confetti from "../assets/gif/confetti.gif";
 import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
@@ -37,7 +36,6 @@ import eleven from "../assets/carousel/startup_11.png";
 import twelve from "../assets/carousel/startup_12.png";
 import thirteen from "../assets/carousel/startup_13.png";
 import fourteen from "../assets/carousel/startup_14.png";
-import blue from "../assets/images/blue.png";
 
 // scss
 import "../styles/hero-home.scss";
@@ -55,40 +53,40 @@ const responsive = {
 
 const items = [ 
   <div className="item" data-value="1">
-    <img className="carousel-image" src={one} />
+    <img className="carousel-image" src={one} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="2">
-    <img className="carousel-image" src={two} />
+    <img className="carousel-image" src={two} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="3">
-    <img className="carousel-image" src={three} />
+    <img className="carousel-image" src={three} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="4">
-    <img className="carousel-image" src={four} />
+    <img className="carousel-image" src={four} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="5">
-    <img className="carousel-image" src={five} />
+    <img className="carousel-image" src={five}  alt="carousel-photo" />
   </div>,
   <div className="item" data-value="6">
-    <img className="carousel-image" src={six} />
+    <img className="carousel-image" src={six} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="7">
-    <img className="carousel-image" src={seven} />
+    <img className="carousel-image" src={seven} alt="carousel-photo" />
   </div>,
   // <div className="item" data-value="8"><img className="carousel-image" src={eight} /></div>,
   // <div className="item" data-value="9"><img className="carousel-image" src={nine} /></div>,
   // <div className="item" data-value="10"><img className="carousel-image" src={ten} /></div>,
   <div className="item" data-value="11">
-    <img className="carousel-image" src={eleven} />
+    <img className="carousel-image" src={eleven} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="12">
-    <img className="carousel-image" src={twelve} />
+    <img className="carousel-image" src={twelve} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="13">
-    <img className="carousel-image" src={thirteen} />
+    <img className="carousel-image" src={thirteen} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="14">
-    <img className="carousel-image" src={fourteen} />
+    <img className="carousel-image" src={fourteen} alt="carousel-photo" />
   </div>
 ];
 // slider
@@ -342,7 +340,7 @@ const IndexPage = props => {
         </div>
       </main>
     </Page>
-  );
+  ); 
 };
 
 export default IndexPage;
