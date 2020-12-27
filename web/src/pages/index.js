@@ -23,20 +23,20 @@ import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
 // import TrackTwoImg from '../assets/images/track-entrepreneurship.png'
 // import StartupBig from "../assets/svg/StartupBig.svg";
-import one from "../assets/carousel/StartUp_01.jpg";
-import two from "../assets/carousel/StartUp_02.jpg";
-import three from "../assets/carousel/StartUp_03.jpg";
-import four from "../assets/carousel/StartUp_04.jpg";
-import five from "../assets/carousel/StartUp_05.jpg";
-import six from "../assets/carousel/StartUp_06.jpg";
-import seven from "../assets/carousel/StartUp_07.jpg";
-// import eight from "../assets/carousel/StartUp_08.jpg";
-// import nine from "../assets/carousel/StartUp_09.jpg";
-// import ten from "../assets/carousel/StartUp_10.jpg";
-import eleven from "../assets/carousel/StartUp_11.jpg";
-import twelve from "../assets/carousel/StartUp_12.jpg";
-import thirteen from "../assets/carousel/StartUp_13.jpg";
-import fourteen from "../assets/carousel/StartUp_14.jpg";
+import one from "../assets/carousel/startup_01.jpg";
+import two from "../assets/carousel/startup_02.jpg";
+import three from "../assets/carousel/startup_03.jpg";
+import four from "../assets/carousel/startup_04.jpg";
+import five from "../assets/carousel/startup_05.jpg";
+import six from "../assets/carousel/startup_06.jpg";
+import seven from "../assets/carousel/startup_07.jpg";
+// import eight from "../assets/carousel/startup_08.jpg";
+// import nine from "../assets/carousel/startup_09.jpg";
+// import ten from "../assets/carousel/startup_10.jpg";
+import eleven from "../assets/carousel/startup_11.jpg";
+import twelve from "../assets/carousel/startup_12.jpg";
+import thirteen from "../assets/carousel/startup_13.jpg";
+import fourteen from "../assets/carousel/startup_14.jpg";
 import blue from "../assets/images/blue.png";
 
 // scss
