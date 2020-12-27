@@ -17,6 +17,7 @@
     "lerna": "^3.13.1"
   },
   "dependencies": {
+    "react-alice-carousel": "^2.2.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-id-swiper": "^4.0.0",
     "react-magnifier": "^3.0.4",

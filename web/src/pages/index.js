@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Page from "../templates/page";
 import { Transition } from "react-transition-group";
 import ScrollAnimation from "react-animate-on-scroll";
-import AliceCarousel from 'react-alice-carousel';
+import AliceCarousel from "react-alice-carousel";
 // import "react-alice-carousel/lib/alice-carousel.css";
 
 // images
@@ -48,26 +48,48 @@ import "../styles/carousel.scss";
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
-  1024: { items: 3 },
+  1024: { items: 3 }
 };
 
 // const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <div className="item" data-value="1"><img className="carousel-image" src={one} /></div>,
-  <div className="item" data-value="2"><img className="carousel-image" src={two} /></div>,
-  <div className="item" data-value="3"><img className="carousel-image" src={three} /></div>,
-  <div className="item" data-value="4"><img className="carousel-image" src={four} /></div>,
-  <div className="item" data-value="5"><img className="carousel-image" src={five} /></div>,
-  <div className="item" data-value="6"><img className="carousel-image" src={six} /></div>,
-  <div className="item" data-value="7"><img className="carousel-image" src={seven} /></div>,
+  <div className="item" data-value="1">
+    <img className="carousel-image" src={one} />
+  </div>,
+  <div className="item" data-value="2">
+    <img className="carousel-image" src={two} />
+  </div>,
+  <div className="item" data-value="3">
+    <img className="carousel-image" src={three} />
+  </div>,
+  <div className="item" data-value="4">
+    <img className="carousel-image" src={four} />
+  </div>,
+  <div className="item" data-value="5">
+    <img className="carousel-image" src={five} />
+  </div>,
+  <div className="item" data-value="6">
+    <img className="carousel-image" src={six} />
+  </div>,
+  <div className="item" data-value="7">
+    <img className="carousel-image" src={seven} />
+  </div>,
   // <div className="item" data-value="8"><img className="carousel-image" src={eight} /></div>,
   // <div className="item" data-value="9"><img className="carousel-image" src={nine} /></div>,
   // <div className="item" data-value="10"><img className="carousel-image" src={ten} /></div>,
-  <div className="item" data-value="11"><img className="carousel-image" src={eleven} /></div>,
-  <div className="item" data-value="12"><img className="carousel-image" src={twelve} /></div>,
-  <div className="item" data-value="13"><img className="carousel-image" src={thirteen} /></div>,
-  <div className="item" data-value="14"><img className="carousel-image" src={fourteen} /></div>,
+  <div className="item" data-value="11">
+    <img className="carousel-image" src={eleven} />
+  </div>,
+  <div className="item" data-value="12">
+    <img className="carousel-image" src={twelve} />
+  </div>,
+  <div className="item" data-value="13">
+    <img className="carousel-image" src={thirteen} />
+  </div>,
+  <div className="item" data-value="14">
+    <img className="carousel-image" src={fourteen} />
+  </div>
 ];
 // slider
 //Duration of Animation
@@ -218,17 +240,13 @@ const IndexPage = props => {
         </div> */}
 
         <AliceCarousel
-        mouseTracking
-        autoPlay
-        autoPlayInterval="1500"
-        infinite
-        items={items}
-        responsive={responsive}
-    />
-
-
-
-
+          mouseTracking
+          autoPlay
+          autoPlayInterval="1500"
+          infinite
+          items={items}
+          responsive={responsive}
+        />
 
         {/* Startup Numbers */}
         <div className="stats-section">
