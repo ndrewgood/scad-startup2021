@@ -12,7 +12,7 @@ const TeamCard = (props) => {
   let lname = props.name.split(" ")[1];
   console.log(fname);
   return(
-    <a href={props.link} className="partners-team-teamCard">
+    <a target="_blank" href={props.link} className="partners-team-teamCard">
     <img src={props.picture} alt="" srcset=""/>
     <div>
       <h3>{fname}<br/>{lname}</h3>
