@@ -23,20 +23,20 @@ import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
 // import TrackTwoImg from '../assets/images/track-entrepreneurship.png'
 // import StartupBig from "../assets/svg/StartupBig.svg";
-import one from "../assets/carousel/startup_01.jpg";
-import two from "../assets/carousel/startup_02.jpg";
-import three from "../assets/carousel/startup_03.jpg";
-import four from "../assets/carousel/startup_04.jpg";
-import five from "../assets/carousel/startup_05.jpg";
-import six from "../assets/carousel/startup_06.jpg";
-import seven from "../assets/carousel/startup_07.jpg";
+import one from "../assets/carousel/one.jpg";
+import two from "../assets/carousel/two.jpg";
+import three from "../assets/carousel/three.jpg";
+import four from "../assets/carousel/four.jpg";
+import five from "../assets/carousel/five.jpg";
+import six from "../assets/carousel/six.jpg";
+import seven from "../assets/carousel/seven.jpg";
 // import eight from "../assets/carousel/startup_08.jpg";
 // import nine from "../assets/carousel/startup_09.jpg";
 // import ten from "../assets/carousel/startup_10.jpg";
-import eleven from "../assets/carousel/startup_11.jpg";
-import twelve from "../assets/carousel/startup_12.jpg";
-import thirteen from "../assets/carousel/startup_13.jpg";
-import fourteen from "../assets/carousel/startup_14.jpg";
+import eleven from "../assets/carousel/eleven.jpg"; 
+import twelve from "../assets/carousel/twelve.jpg";
+import thirteen from "../assets/carousel/thirteen.jpg";
+import fourteen from "../assets/carousel/fourteen.jpg";
 import blue from "../assets/images/blue.png";
 
 // scss
@@ -53,7 +53,7 @@ const responsive = {
 
 // const handleDragStart = (e) => e.preventDefault();
 
-const items = [
+const items = [ 
   <div className="item" data-value="1">
     <img className="carousel-image" src={one} />
   </div>,
