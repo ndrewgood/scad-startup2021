@@ -279,7 +279,7 @@ const IndexPage = props => {
         {/* are you ready for this year */}
         <div className="balloon-wrapper balloons">
           <ScrollAnimation style={{ height: "100vh" }} animateIn="fadeIn" delay="500">
-            <img className="balloons-width fade-in" src={Confetti} alt="balloons" />
+            {/* <img className="balloons-width fade-in" src={Confetti} alt="balloons" /> */}
           </ScrollAnimation>
           <div className="ready">
             <img src={TopLine} alt="top line" />
