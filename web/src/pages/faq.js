@@ -77,7 +77,7 @@ const Faq = (props) => {
       />
       <div className="container">
         <ResourceCardGrid>
-          <div className="span-5">
+          <div className="span-5  webFAQ">
             {
               faqColumn1.map((edge) => (
                 <FAQCard
@@ -89,9 +89,21 @@ const Faq = (props) => {
               ))
             }
           </div>
-          <div className="span-5">
+          <div className="span-5 webFAQ">
             {
               faqColumn2.map((edge) => (
+                <FAQCard
+                  key={edge.node._id}  
+                  sectionTitle={edge.node.title}
+                  cardNumber={edge.node.order} 
+                  faqs={edge.node.qnaList}
+                  />
+              ))
+            }
+          </div>
+          <div className="fullSpan mobileFAQ">
+            {
+              faqArray.map((edge) => (
                 <FAQCard
                   key={edge.node._id}  
                   sectionTitle={edge.node.title}
