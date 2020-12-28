@@ -5,8 +5,19 @@
     &.flipped {
         flex-direction: row-reverse;
 
-        .schedule-card-image {
+        .schedule-card-imageWeb {
             margin: -50px 20px -50px -50px;
+
+            @media only screen and (max-width: 1100px) {
+                margin: 0 10px 0 -50px;
+                img {
+                    border-radius: 0;
+                }
+            }
+
+            @media only screen and (max-width: 800px) {
+                margin: -50px 25px -50px -50px;
+            }
         }
     }
 
@@ -50,11 +61,31 @@
         }
     }
 
-    .schedule-card-image {
+    .schedule-card-imageWeb {
         margin: -50px -50px -50px 0px;
         img {
             height: 100%;
             border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    .schedule-card-imageMobile {
+        margin: 20px 0;
+        display: none;
+
+        img {
+            max-width: 100%;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

@@ -20,11 +20,18 @@ const ScheduleCard = ({span, bg, type, title, date, description, attendance, ima
               {attendance ? (<p className="schedule-card-attendance">{"* " + attendance} </p>) : null}
             </div>
           </div>
+          { 
+            image ? (
+              <div className="schedule-card-imageMobile">
+                <img src={image.imageMobile.asset.url} alt=""/>
+              </div>
+            ) : null
+          }
           <p className="schedule-card-timeLink">Time & meeting link will be announced soon!</p> 
         </div>
         { 
           image ? (
-            <div className="schedule-card-image">
+            <div className="schedule-card-imageWeb">
               <img src={image.imageWeb.asset.url} alt=""/>
             </div>
           ) : null
