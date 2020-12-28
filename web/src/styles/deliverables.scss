@@ -1,3 +1,16 @@
+.webResource {
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.mobileResource {
+    display: none;
+    @media only screen and (max-width: 800px) {
+        display: block;
+    }
+}
+
 .deliverables-imageContainer {
     margin: 0 -75px -50px -75px;
 

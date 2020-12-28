@@ -37,14 +37,22 @@ const Deliverables = (props) => {
       />
       <div className="container">
         <ResourceCardGrid>
-          <div className="span-5">
+          <div className="span-5 webResource">
             <DeliverableCard deliverableTitle="Presentation Deck" deliverableDescription="Students will wow the judges with a digital slideshow to explain their idea and area of impact that their new product will have."  cardNumber="1" image={deckImage}/>
             <DeliverableCard deliverableTitle="Business Model" deliverableDescription={["Determine how your solution will make an impact and generate revenue.", <br/>, "Download the business model PDF here."]} cardNumber="3" image={businessModelImage}/>
           </div>
-          <div className="span-5">
+          <div className="span-5 webResource">
             <DeliverableCard deliverableTitle="Visual Prototype" deliverableDescription="Students need to provide an example of their concept through a prototype that they can show the judges, either in digital or physical form."  cardNumber="2" image={prototypeImage}/>
             <DeliverableCard deliverableTitle="WOW Factor" deliverableDescription="What else makes your solution stand out from others? Bring posters, vision films, stickers, clothing, anything you’d like!"  cardNumber="4" image={wowImage}/>
           </div>
+
+          <div className="fullSpan mobileResource">
+            <DeliverableCard deliverableTitle="Presentation Deck" deliverableDescription="Students will wow the judges with a digital slideshow to explain their idea and area of impact that their new product will have."  cardNumber="1" image={deckImage}/>
+            <DeliverableCard deliverableTitle="Visual Prototype" deliverableDescription="Students need to provide an example of their concept through a prototype that they can show the judges, either in digital or physical form."  cardNumber="2" image={prototypeImage}/>
+            <DeliverableCard deliverableTitle="Business Model" deliverableDescription={["Determine how your solution will make an impact and generate revenue.", <br/>, "Download the business model PDF here."]} cardNumber="3" image={businessModelImage}/>
+            <DeliverableCard deliverableTitle="WOW Factor" deliverableDescription="What else makes your solution stand out from others? Bring posters, vision films, stickers, clothing, anything you’d like!"  cardNumber="4" image={wowImage}/>
+          </div>
+          
         </ResourceCardGrid>
       </div>
     </Page>
