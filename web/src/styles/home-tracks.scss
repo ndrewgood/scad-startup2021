@@ -73,7 +73,7 @@
   // margin-left: auto;
   color: #c5c5c5;
   @media only screen and (max-width: 800px) {
-    width: 60%;
+    width: 95%;
   }
 }
 
@@ -113,6 +113,10 @@
   grid-row-gap: 0px;
   padding: 5% 0;
 
+  img {
+    max-width: 100%;
+  }
+
   @media only screen and (max-width: 650px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -120,6 +124,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding-bottom: 0;
+    // margin-bottom: 100px;
   }
 }
 

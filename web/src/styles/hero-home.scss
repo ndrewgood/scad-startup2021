@@ -131,7 +131,7 @@ a.middle:hover:before {
   justify-content: center;
   padding-bottom: 5%;
 
-  img{
+  img {
     pointer-events: none;
   }
 
@@ -157,6 +157,9 @@ a.middle:hover:before {
 
   p {
     font-size: 21px;
+    @media only screen and (max-width: 650px) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -177,6 +180,9 @@ a.middle:hover:before {
   padding-top: 5%;
   font-size: 22px;
   font-weight: bold;
+  @media only screen and (max-width: 650px) {
+    padding-top: 10%;
+  }
 }
 
 .stats-container {
@@ -250,7 +256,7 @@ a.middle:hover:before {
     color: #c5c5c5;
     width: 85%;
     margin: auto;
-    @media only screen and (max-width:650px){
+    @media only screen and (max-width: 650px) {
       width: 100%;
     }
   }

@@ -51,7 +51,7 @@ const responsive = {
 
 // const handleDragStart = (e) => e.preventDefault();
 
-const items = [ 
+const items = [
   <div className="item" data-value="1">
     <img className="carousel-image" src={one} alt="carousel-photo" />
   </div>,
@@ -65,7 +65,7 @@ const items = [
     <img className="carousel-image" src={four} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="5">
-    <img className="carousel-image" src={five}  alt="carousel-photo" />
+    <img className="carousel-image" src={five} alt="carousel-photo" />
   </div>,
   <div className="item" data-value="6">
     <img className="carousel-image" src={six} alt="carousel-photo" />
@@ -340,7 +340,7 @@ const IndexPage = props => {
         </div>
       </main>
     </Page>
-  ); 
+  );
 };
 
 export default IndexPage;
