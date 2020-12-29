@@ -15,6 +15,13 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-anchor-links',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SCAD StartUp 2021`,
+        icon: `src/assets/images/favicon2.png`
+      },
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         // change this later

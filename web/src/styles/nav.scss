@@ -47,6 +47,13 @@ nav {
     
 }
 
+.nav-startupLogo:hover {
+  img {
+    -webkit-filter: drop-shadow( 3px 3px 5px rgba(228, 84, 84, 0.904));
+    filter: drop-shadow( 3px 3px 5px rgba(247, 68, 68, 0.877));
+  }
+}
+
 .nav-itemContainer {
     padding-inline-start: 0;
     display: flex;
@@ -184,11 +191,7 @@ nav {
     filter: drop-shadow( 3px 3px 2px rgba(247, 68, 68, 0.7));
     transition: .2s;
   }
-  img:hover {
-    -webkit-filter: drop-shadow( 3px 3px 5px rgba(228, 84, 84, 0.904));
-    filter: drop-shadow( 3px 3px 5px rgba(247, 68, 68, 0.877));
-  }
-    
+
 }
 
 .mobileNav-menu {
