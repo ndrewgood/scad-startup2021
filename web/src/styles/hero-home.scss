@@ -80,7 +80,7 @@ a.middle:hover:before {
     font-size: 18px;
     width: 75%;
     @media only screen and (max-width: 650px) {
-      width: 100%;
+      // width: 100%;
     }
   }
 }
@@ -88,13 +88,25 @@ a.middle:hover:before {
 .about-image {
   float: right;
 
-  @media only screen and (max-width: 650px) {
-    max-width: 100%;
+
+  // @media only screen and (max-width: 768px) {
+  //   width: 30%;
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  // }
+
+  @media only screen and (max-width: 1024px) and (min-width:768px) {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
 .about-position {
   display: flex;
+  position: relative;
 
   @media only screen and (max-width: 650px) {
     flex-direction: column;
@@ -106,6 +118,10 @@ a.middle:hover:before {
   position: relative;
   display: block;
   color: #c5c5c5;
+
+  @media only screen and (max-width:768px){
+    padding: 100px 5%;
+  }
 
   @media only screen and (max-width: 650px) {
     padding: 100px 5%;
@@ -133,12 +149,17 @@ a.middle:hover:before {
 
   img {
     pointer-events: none;
+    @media only screen and (max-width:1024px) and (min-width:768px){
+      width: 100%;
+    }
   }
 
   @media only screen and (max-width: 650px) {
     flex-direction: column;
-    align-items: flex-start;
+    // align-items: flex-start;
   }
+
+
 
   // img:nth-child(1){
   //     @media only screen and (max-width:650px){
@@ -152,7 +173,7 @@ a.middle:hover:before {
 
   div:nth-child(n + 2) {
     display: block;
-    margin: auto;
+    margin: 0 25px;
   }
 
   p {
