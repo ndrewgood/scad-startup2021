@@ -17,7 +17,7 @@ import Fifty from "../assets/svg/Fifty.svg";
 import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
-import Confetti from "../assets/gif/confetti.gif";
+import Confetti from "../assets/gif/Confetti_Main.gif";
 import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
 // import TrackTwoImg from '../assets/images/track-entrepreneurship.png'
@@ -277,7 +277,7 @@ const IndexPage = props => {
         {/* are you ready for this year */}
         <div className="balloon-wrapper balloons">
           <ScrollAnimation style={{ height: "100vh" }} animateIn="fadeIn" delay="500">
-            {/* <img className="balloons-width fade-in" src={Confetti} alt="balloons" /> */}
+            <img className="balloons-width fade-in" src={Confetti} alt="balloons" />
           </ScrollAnimation>
           <div className="ready">
             <img src={TopLine} alt="top line" />
