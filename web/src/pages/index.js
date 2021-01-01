@@ -17,7 +17,7 @@ import Fifty from "../assets/svg/Fifty.svg";
 import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
-import Confetti from "../assets/gif/Confetti_Main.gif";
+import Confetti from "../assets/gif/Confetti_Main_02.gif";
 import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
 // import TrackTwoImg from '../assets/images/track-entrepreneurship.png'
