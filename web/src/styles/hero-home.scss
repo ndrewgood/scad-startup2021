@@ -227,6 +227,13 @@ a.middle:hover:before {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  img{
+    @media only screen and (max-width:650px){
+      display: none;
+    }
+  }
+      
+
   p {
     font-size: 24px;
   }
