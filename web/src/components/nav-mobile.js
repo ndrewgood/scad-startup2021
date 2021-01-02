@@ -71,9 +71,9 @@ const NavMobile = () => {
               </div>
               <a className="nav-registerButton mobileNav-registerButton">Register</a>
               <div id="mobileNav-socialLinks" className="footer-socialLinks">
-                <a target="_blank" href="https://www.instagram.com/scadflux/"><img src={InstagramLogo} alt="Instagram Logo" /></a>
-                <a target="_blank" href="https://www.facebook.com/groups/scadflux"><img src={FacebookLogo} alt="Facebook Logo" /></a>
-                <a target="_blank" href="https://discord.gg/FMJ4tY8"><img src={DiscordLogo} alt="Discord Logo" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/scadflux/"><img src={InstagramLogo} alt="Instagram Logo" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/groups/scadflux"><img src={FacebookLogo} alt="Facebook Logo" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/FMJ4tY8"><img src={DiscordLogo} alt="Discord Logo" /></a>
               </div>
             </div>
           </div>

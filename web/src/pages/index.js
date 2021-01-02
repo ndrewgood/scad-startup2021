@@ -17,7 +17,7 @@ import Fifty from "../assets/svg/Fifty.svg";
 import TwentySix from "../assets/svg/TwentySix.svg";
 import TopLine from "../assets/svg/TopLine.svg";
 import BottomLine from "../assets/svg/BottomLine.svg";
-import Confetti from "../assets/gif/Confetti_Main_02.gif";
+import Confetti from "../assets/gif/Confetti_Main.gif";
 import Dude from "../assets/images/dude.png";
 // import TrackOneImg from '../assets/images/track-local.png'
 // import TrackTwoImg from '../assets/images/track-entrepreneurship.png'
@@ -53,40 +53,40 @@ const responsive = {
 
 const items = [
   <div className="item" data-value="1">
-    <img className="carousel-image" src={one} alt="carousel-photo" />
+    <img className="carousel-image" src={one} alt="carousel" />
   </div>,
   <div className="item" data-value="2">
-    <img className="carousel-image" src={two} alt="carousel-photo" />
+    <img className="carousel-image" src={two} alt="carousel" />
   </div>,
   <div className="item" data-value="3">
-    <img className="carousel-image" src={three} alt="carousel-photo" />
+    <img className="carousel-image" src={three} alt="carousel" />
   </div>,
   <div className="item" data-value="4">
-    <img className="carousel-image" src={four} alt="carousel-photo" />
+    <img className="carousel-image" src={four} alt="carousel" />
   </div>,
   <div className="item" data-value="5">
-    <img className="carousel-image" src={five} alt="carousel-photo" />
+    <img className="carousel-image" src={five} alt="carousel" />
   </div>,
   <div className="item" data-value="6">
-    <img className="carousel-image" src={six} alt="carousel-photo" />
+    <img className="carousel-image" src={six} alt="carousel" />
   </div>,
   <div className="item" data-value="7">
-    <img className="carousel-image" src={seven} alt="carousel-photo" />
+    <img className="carousel-image" src={seven} alt="carousel" />
   </div>,
   // <div className="item" data-value="8"><img className="carousel-image" src={eight} /></div>,
   // <div className="item" data-value="9"><img className="carousel-image" src={nine} /></div>,
   // <div className="item" data-value="10"><img className="carousel-image" src={ten} /></div>,
   <div className="item" data-value="11">
-    <img className="carousel-image" src={eleven} alt="carousel-photo" />
+    <img className="carousel-image" src={eleven} alt="carousel" />
   </div>,
   <div className="item" data-value="12">
-    <img className="carousel-image" src={twelve} alt="carousel-photo" />
+    <img className="carousel-image" src={twelve} alt="carousel" />
   </div>,
   <div className="item" data-value="13">
-    <img className="carousel-image" src={thirteen} alt="carousel-photo" />
+    <img className="carousel-image" src={thirteen} alt="carousel" />
   </div>,
   <div className="item" data-value="14">
-    <img className="carousel-image" src={fourteen} alt="carousel-photo" />
+    <img className="carousel-image" src={fourteen} alt="carousel" />
   </div>
 ];
 // slider

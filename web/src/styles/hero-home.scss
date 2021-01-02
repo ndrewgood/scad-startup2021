@@ -244,11 +244,12 @@ a.middle:hover:before {
 }
 
 .balloons-width {
+  display: flex;
+  justify-content: center;
   height: 100%;
-  width: 100%;
 
   @media only screen and (max-width: 650px) {
-    width: auto;
+    height: 100%;
   }
 }
 
