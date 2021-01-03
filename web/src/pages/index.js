@@ -9,6 +9,7 @@ import AliceCarousel from "react-alice-carousel";
 import Ideate from "../assets/svg/Ideate.svg";
 import Design from "../assets/svg/Design.svg";
 import Create from "../assets/svg/Create.svg";
+import Compete from "../assets/svg/Compete.svg";
 import DownArrow from "../assets/svg/DownArrow.svg";
 import IllyOne from "../assets/images/IllyOne.png";
 import ThreeHundred from "../assets/svg/ThreeHundred.svg";
@@ -183,6 +184,7 @@ const IndexPage = props => {
             <img src={Ideate} alt="ideate" />
             <img src={Design} alt="ideate" />
             <img src={Create} alt="ideate" />
+            <img src={Compete} alt="compete" />
           </div>
           <img className="down-arrow" src={DownArrow} alt="down-arrow" />
         </div>

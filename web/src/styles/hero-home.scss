@@ -48,9 +48,8 @@ a.middle:hover:before {
   align-items: center;
   flex-direction: column;
 
-  img:nth-child(3) {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  img {
+    margin: 10px 0;
   }
 }
 
@@ -58,7 +57,11 @@ a.middle:hover:before {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  // margin-top: 100px;
+
+  @media only screen and (max-width:650px){
+    margin-top: 100px;
+  }
 
   img {
     max-width: 100%;
