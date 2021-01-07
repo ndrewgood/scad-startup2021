@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Page from "../templates/page";
 import { Transition } from "react-transition-group";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -117,28 +117,27 @@ const TrackOne = ({ in: inProp }) => (
     {state => (
       //pass style in with state of mount
       <div
-      className="track-infoContainer"
-      style={{
-        ...defaultStyle,
-        ...transitionStyles[state]
-      }}
-    >
-      <h1 className="track-trackHeader">
-        <span>Entrepreneurship</span>
-        <br />
-        The core of StartUp
-      </h1>
-      <p className="track-trackBody">
-        This is the core of StartUp. Students who shoose this track will becoming up with their
-        own, new innovative business ideas about their created product or service. Here, student
-        designers have the most free reign to design a creative solution to the problem we present
-        them with. This has, and will always be, StartUp’s core.
-        <br />
-        <br />
-        <i>*Judging criteria will be different for each track</i>
-      </p>
-    </div>
-
+        className="track-infoContainer"
+        style={{
+          ...defaultStyle,
+          ...transitionStyles[state]
+        }}
+      >
+        <h1 className="track-trackHeader">
+          <span>Entrepreneurship</span>
+          <br />
+          The core of StartUp
+        </h1>
+        <p className="track-trackBody">
+          This is the core of StartUp. Students who shoose this track will becoming up with their
+          own, new innovative business ideas about their created product or service. Here, student
+          designers have the most free reign to design a creative solution to the problem we present
+          them with. This has, and will always be, StartUp’s core.
+          <br />
+          <br />
+          <i>*Judging criteria will be different for each track</i>
+        </p>
+      </div>
     )}
   </Transition>
 );
@@ -147,27 +146,27 @@ const TrackTwo = ({ in: inProp }) => (
   <Transition in={inProp} timeout={duration}>
     {state => (
       <div
-      className="track-infoContainer"
-      style={{
-        ...defaultStyle,
-        ...transitionStyles[state]
-      }}
-    >
-      <h1 className="track-trackHeader">
-        Giving Back To
-        <br />
-        Your <span>Locals</span>
-      </h1>
-      <p className="track-trackBody">
-        We here at StartUp want to be able to give back. During the global pandemic, small
-        businesses have been hit the hardest. We want to offer students a second track, the
-        ability to be able to work hands-on with a local small business to Savannah or Atlanta,
-        and find their unique set of problems and what they’d do to solve it.
-        <br />
-        <br />
-        <i>*Judging criteria will be different for each track</i>
-      </p>
-    </div>
+        className="track-infoContainer"
+        style={{
+          ...defaultStyle,
+          ...transitionStyles[state]
+        }}
+      >
+        <h1 className="track-trackHeader">
+          Giving Back To
+          <br />
+          Your <span>Locals</span>
+        </h1>
+        <p className="track-trackBody">
+          We here at StartUp want to be able to give back. During the global pandemic, small
+          businesses have been hit the hardest. We want to offer students a second track, the
+          ability to be able to work hands-on with a local small business to Savannah or Atlanta,
+          and find their unique set of problems and what they’d do to solve it.
+          <br />
+          <br />
+          <i>*Judging criteria will be different for each track</i>
+        </p>
+      </div>
     )}
   </Transition>
 );
