@@ -158,10 +158,7 @@ const TrackTwo = ({ in: inProp }) => (
           Your <span>Locals</span>
         </h1>
         <p className="track-trackBody">
-          We here at StartUp want to be able to give back. During the global pandemic, small
-          businesses have been hit the hardest. We want to offer students a second track, the
-          ability to be able to work hands-on with a local small business to Savannah or Atlanta,
-          and find their unique set of problems and what they’d do to solve it.
+        Want to give back to the community and do not know how to? StartUp is here to support you. During the global pandemic, small businesses have been hit the hardest. Join Track 2 and work hands-on with a local small business in Savannah or Atlanta, and design creative solutions catered to their unique set of problems.
           <br />
           <br />
           <i>*Judging criteria will be different for each track</i>
@@ -219,13 +216,11 @@ const IndexPage = props => {
                 </span>
                 <br />
                 <br />
-                StartUp provides you the toolkit and resources needed to create a professional
-                product or service concept in just under seven days. Make connections and get tips
-                from real life designers, and pitch your solution to professional industry leaders.
-                Who knows, maybe you’ll even take your product to launch!
+                StartUp provides you the toolkit and resources needed to create a professional product or service concept in just under seven days. Connect and consult from current designers in the industry, and pitch your solution to professional industry leaders. This year, you can also make a difference and work with real life businesses!
+
                 <br />
                 <br />
-                It’s pretty much Shark Tank, just not on TV (yet).
+                It’s pretty much Shark Tank, just not on TV (yet). Who knows, your million dollar idea might just start here! 
               </p>
             </div>
             <div>
@@ -295,13 +290,10 @@ const IndexPage = props => {
         {/* different */}
         <div className="container different">
           <h1>
-            We Do Things <span className="red-highlight">Different</span> This Year
+            We're Doing Things <span className="red-highlight">Different</span> This Year
           </h1>
           <p>
-            StartUp 2021 will be <span className="red-highlight">fully virtual</span> and have two
-            different tracks! These tracks allow participants from freely coming up with creative
-            business solutions to giving back to the community by helping small businesses that have
-            been nagatively impacted by the global pandemic.
+            StartUp 2021 will be held <span className="red-highlight">virtually</span> and consist of two different tracks. Go the OG route and enter Startup with your own original business idea <span className="red-highlight">(Track 1)</span>, or collaborate with local businesses <span className="red-highlight">(Track 2)</span>. While keeping to StartUp tradition, Track 2 allows you to come up with creative business solutions and give back to the community by helping small businesses that have been negatively impacted by the global pandemic.
           </p>
         </div>
 

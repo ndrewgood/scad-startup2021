@@ -45,7 +45,7 @@ const transitionStylesImage = {
   exited:  {right: -30, opacity: 0},
 };
 
-const TrackOne = ({in: inProp}) => (
+const TrackTwo = ({in: inProp}) => (
   //rtg component, in determines when to turn on and off the component
   <Transition in={inProp} timeout={duration}>
     {state => (
@@ -55,13 +55,13 @@ const TrackOne = ({in: inProp}) => (
         ...transitionStyles[state]
       }}>
         <h1 className="theme-trackHeader">Giving Back To<br />Your <span>Locals</span></h1>
-        <p className="theme-trackBody">We here at StartUp want to be able to give back. During the global pandemic, small businesses have been hit the hardest. We want to offer students a second track, the ability to be able to work hands-on with a local small business to Savannah or Atlanta, and find their unique set of problems and what they’d do to solve it.<br/><br/><i>*Judging criteria will be different for each track</i></p>
+        <p className="theme-trackBody">Want to give back to the community and do not know how to? StartUp is here to support you. During the global pandemic, small businesses have been hit the hardest. Join Track 2 and work hands-on with a local small business in Savannah or Atlanta, and design creative solutions catered to their unique set of problems.<br/><br/><i>*Judging criteria will be different for each track</i></p>
       </div>
     )}
   </Transition>
 )
 
-const TrackTwo = ({in: inProp}) => (
+const TrackOne = ({in: inProp}) => (
   <Transition in={inProp} timeout={duration}>
     {state => (
       <div className="theme-infoContainer container" style={{
@@ -76,7 +76,7 @@ const TrackTwo = ({in: inProp}) => (
   </Transition>
 )
 
-const TrackOneImage = ({in: inProp}) => (
+const TrackTwoImage = ({in: inProp}) => (
   <Transition in={inProp} timeout={duration}>
     {state => (
       <img className="theme-trackImage" src={TrackOneImg} alt="" style={{
@@ -87,7 +87,7 @@ const TrackOneImage = ({in: inProp}) => (
   </Transition>
 )
 
-const TrackTwoImage = ({in: inProp}) => (
+const TrackOneImage = ({in: inProp}) => (
   <Transition in={inProp} timeout={duration}>
     {state => (
       <img className="theme-trackImage" src={TrackTwoImg} alt="" style={{
