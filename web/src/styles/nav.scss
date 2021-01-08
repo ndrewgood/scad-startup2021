@@ -33,6 +33,7 @@ nav {
 
 .nav-startupLogo {
   display: flex;
+  height: 60px;
   img {
     margin-top: -10px;
     width: 80px;
@@ -126,6 +127,7 @@ nav {
   margin-top: 15px;
   transition: .5s;
   transform: scale(1,1);
+  height: 20px;
   // width: 80px;
 }
 
