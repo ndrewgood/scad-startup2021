@@ -179,7 +179,6 @@ const IndexPage = props => {
             <h2>With StartUp, you can...</h2>
             <img src={Ideate} alt="ideate" />
             <img src={Design} alt="ideate" />
-            <img src={Create} alt="ideate" />
             <img src={Compete} alt="compete" />
           </div>
           <img className="down-arrow" src={DownArrow} alt="down-arrow" />
