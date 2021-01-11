@@ -63,9 +63,10 @@ a.middle:hover:before {
   flex-direction: column;
   margin-top: 100px;
 
-  // h2{
-  //   margin-top: 0;
-  // }
+  h2{
+    color: #bababa;
+    font-size: 20px;
+  }
 
   @media only screen and (max-width: 650px) {
     margin-top: 100px;

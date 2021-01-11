@@ -28,7 +28,7 @@ const Footer = () => {
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/groups/scadflux"><img src={FacebookLogo} alt="Facebook Logo" /></a>
             <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/FMJ4tY8"><img src={DiscordLogo} alt="Discord Logo" /></a>
           </div>
-          <a className="footer-registerButton">Register</a>
+          <a style={{marginTop:"0"}} className="nav-registerButton">Register</a>
         </div>
       </div>
     </footer>
