@@ -23,7 +23,7 @@ const Nav = () => {
           </ul>
         </div>
       </ul>
-      <a className="nav-registerButton">Register</a>
+      <a className="nav-registerButton" target="_blank" href="https://forms.gle/3RYmCA1XgufbTMgS8">Register</a>
     </nav>
   );
 };
