@@ -3,6 +3,7 @@ import Page from "../templates/page";
 import { Transition } from "react-transition-group";
 import ScrollAnimation from "react-animate-on-scroll";
 import AliceCarousel from "react-alice-carousel";
+import { window } from "browser-monads";
 // import "react-alice-carousel/lib/alice-carousel.css";
 
 // images
@@ -172,6 +173,8 @@ const TrackTwo = ({ in: inProp }) => (
     )}
   </Transition>
 );
+
+
 
 function move({ clientX: x, clientY: y, target }) {
 	let scale = 1;
