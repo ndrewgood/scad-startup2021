@@ -192,7 +192,7 @@ function move({ clientX: x, clientY: y, target }) {
 		easing: "easeOutElastic(1, 1)"
 	});
 }
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' ? {onLoad: this.load} : {}) {
   window.addEventListener("mousemove", move);
 
   window.onload = () =>
