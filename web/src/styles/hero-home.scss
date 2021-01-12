@@ -47,6 +47,8 @@ a.middle:hover:before {
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: none;
+
 
   img {
     margin: 15px 0;
@@ -62,6 +64,8 @@ a.middle:hover:before {
   align-items: center;
   flex-direction: column;
   margin-top: 40px;
+
+
 
   h2{
     color: #bababa;
@@ -364,4 +368,18 @@ a.middle:hover:before {
   100% {
     opacity: 1;
   }
+}
+
+.cursor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 62px;
+	height: 62px;
+	background-color: lightblue;
+	pointer-events: none;
+	border-radius: 50% 100% 100% 100%;
+	z-index: 9999999;
+	mix-blend-mode: difference;
+	opacity: 1;
 }

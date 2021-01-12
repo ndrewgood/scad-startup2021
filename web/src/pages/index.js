@@ -44,6 +44,11 @@ import "../styles/general.scss";
 import "../styles/home-tracks.scss";
 import "../styles/carousel.scss";
 
+
+import animejs from 'animejs';
+
+
+
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
@@ -168,6 +173,31 @@ const TrackTwo = ({ in: inProp }) => (
   </Transition>
 );
 
+function move({ clientX: x, clientY: y, target }) {
+	let scale = 1;
+
+	if (target && target.classList && target.classList.contains("test")) {
+		scale = 1.75;
+	}
+
+	const cursorElement = animejs({
+		targets: ".cursor",
+		translateX: Math.floor(x),
+		translateY: Math.floor(y),
+		rotate: x / -8 + 135,
+		scale,
+		easing: "easeOutElastic(1, 1)"
+	});
+}
+
+window.addEventListener("mousemove", move);
+
+window.onload = () =>
+	animejs({
+		targets: ".cursor",
+		opacity: 1
+	}); 
+
 const IndexPage = props => {
   const [track, setTrack] = useState(1);
 
@@ -176,10 +206,11 @@ const IndexPage = props => {
       <main className="main-body">
         <div className="hero container">
           <div className="hero-words">
+          <i className="cursor"></i>
             <h2>With StartUp, you can...</h2>
-            <img src={Ideate} alt="ideate" />
-            <img src={Design} alt="ideate" />
-            <img src={Compete} alt="compete" />
+            <img className="test" src={Ideate} alt="ideate" />
+            <img className="test" src={Design} alt="ideate" />
+            <img className="test" src={Compete} alt="compete" />
           </div>
           <img className="down-arrow" src={DownArrow} alt="down-arrow" />
         </div>
