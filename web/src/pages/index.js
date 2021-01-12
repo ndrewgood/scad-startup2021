@@ -192,14 +192,16 @@ function move({ clientX: x, clientY: y, target }) {
 		easing: "easeOutElastic(1, 1)"
 	});
 }
+if (typeof window !== 'undefined') {
+  window.addEventListener("mousemove", move);
 
-window.addEventListener("mousemove", move);
+  window.onload = () =>
+    animejs({
+      targets: ".cursor",
+      opacity: 1
+    }); 
+}
 
-window.onload = () =>
-	animejs({
-		targets: ".cursor",
-		opacity: 1
-	}); 
 
 const IndexPage = props => {
   const [track, setTrack] = useState(1);
