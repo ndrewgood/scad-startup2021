@@ -70,6 +70,7 @@ const NavMobile = () => {
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/partners-team" className="mobileNav-startupLogo">Partners</Link>
               </div>
               <a className="nav-registerButton mobileNav-registerButton">Register</a>
+              <a className="footer-smallBusiness mobileNav-smallBusiness" rel="noopener noreferrer" target="_blank" href="https://forms.gle/5gPieSiSUY6FQtbaA">Small Business Application</a>
               <div id="mobileNav-socialLinks" className="footer-socialLinks">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/scadflux/"><img src={InstagramLogo} alt="Instagram Logo" /></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/groups/scadflux"><img src={FacebookLogo} alt="Facebook Logo" /></a>
