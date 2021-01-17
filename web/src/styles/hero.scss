@@ -2,6 +2,13 @@
     width: 100%;
     min-height: 450px;
     text-align: center;
+    background-image: url(../assets/gif/bgwaves.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media only screen and (max-width: 1000px) {
+        background-image: none;
+    }
     @media only screen and (max-width: 800px) {
         min-height: 350px;
     }
@@ -38,6 +45,7 @@
 
     line-height: 120px;
     background: linear-gradient(90deg, #677CFC -8.94%, #E56F6E 112.53%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media only screen and (max-width: 800px) {
