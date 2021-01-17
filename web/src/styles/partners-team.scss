@@ -2,8 +2,12 @@
     margin-top: 40px;
     background-color: #1A1A1A;
     width: 100vw;
-    height: 400px;
     position: relative;
+
+}
+
+.partners-team-partners-cs {
+    height: 400px;
     @media only screen and (max-width: 960px) {
         height: 600px;
     }
@@ -19,7 +23,7 @@
      }
 }
 
-.partners-team-partners-info {
+.partners-team-partners-comingSoonContainer {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -32,6 +36,32 @@
         span {
             color: #FB645B;
         }
+    }
+}
+
+.partners-team-partners-info {
+    display: flex;
+    padding: 80px 0;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        padding: 50px 0;
+        h2, a {
+            margin: auto;
+            text-align: center;
+        }
+        a {
+            margin-top: 40px;
+        }
+    }
+    h2 {
+        font-size: 42px;
+        span {
+            color: #FB645B;
+        }
+    }
+    img {
+        height: 200px;
     }
 
 }

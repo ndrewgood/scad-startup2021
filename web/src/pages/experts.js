@@ -14,8 +14,8 @@ const ExpertsPage = (props) => {
         smallHeader={"Shout out to our"} 
         bigHeader={["Experts and", <br key="ugh"/>, "Mentors"]}
       />
-      <div className="partners-team-partners">
-        <div className="partners-team-partners-info container">
+      <div className="partners-team-partners partners-team-partners-cs">
+        <div className="partners-team-partners-comingSoonContainer container">
           <h2>StartUp<br /><span>Experts and Mentors</span></h2>
         </div>
         <img className="partners-team-comingSoon" src={ComingSoon} alt=""/>
