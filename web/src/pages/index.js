@@ -3,7 +3,7 @@ import Page from "../templates/page";
 import { Transition } from "react-transition-group";
 import ScrollAnimation from "react-animate-on-scroll";
 import AliceCarousel from "react-alice-carousel";
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 // import "react-alice-carousel/lib/alice-carousel.css";
 
 // images
@@ -287,11 +287,11 @@ const IndexPage = props => {
 
         {/* StartUp 2021 */}
         <div className="startupBig">
-          <LazyLoad>
+          {/* <LazyLoad height="auto"> */}
           <video className="startup-videos" width="100%" loop autoPlay playsInline muted>
           <source src={video} alt="video"  />
           </video>
-          </LazyLoad>
+          {/* </LazyLoad> */}
         </div>
 
         {/* different */}
