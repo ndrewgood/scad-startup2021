@@ -38,7 +38,7 @@ import eleven from "../assets/carousel/startup_11.png";
 import twelve from "../assets/carousel/startup_12.png";
 import thirteen from "../assets/carousel/startup_13.png";
 import fourteen from "../assets/carousel/startup_14.png";
-import video from "../assets/gif/Logo_Wide.mp4";
+import video from "../assets/gif/Logo_Video.mp4";
 
 // scss
 import "../styles/hero-home.scss";
