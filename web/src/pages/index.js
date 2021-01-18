@@ -3,6 +3,7 @@ import Page from "../templates/page";
 import { Transition } from "react-transition-group";
 import ScrollAnimation from "react-animate-on-scroll";
 import AliceCarousel from "react-alice-carousel";
+import LazyLoad from 'react-lazyload';
 // import "react-alice-carousel/lib/alice-carousel.css";
 
 // images
@@ -37,6 +38,7 @@ import eleven from "../assets/carousel/startup_11.png";
 import twelve from "../assets/carousel/startup_12.png";
 import thirteen from "../assets/carousel/startup_13.png";
 import fourteen from "../assets/carousel/startup_14.png";
+import video from "../assets/gif/Logo_Wide.mp4";
 
 // scss
 import "../styles/hero-home.scss";
@@ -284,7 +286,13 @@ const IndexPage = props => {
         </div>
 
         {/* StartUp 2021 */}
-        <div className="startupBig"></div>
+        <div className="startupBig">
+          <LazyLoad>
+          <video className="startup-videos" width="100%" loop autoPlay playsInline muted>
+          <source src={video} alt="video"  />
+          </video>
+          </LazyLoad>
+        </div>
 
         {/* different */}
         <div className="container different">

@@ -21,6 +21,7 @@
     "react-alice-carousel": "^2.2.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-id-swiper": "^4.0.0",
+    "react-lazyload": "^3.1.0",
     "react-magnifier": "^3.0.4",
     "react-native-animated-emoji": "^0.1.4",
     "swiper": "^6.4.5"

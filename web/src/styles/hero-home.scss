@@ -278,15 +278,19 @@ a.middle:hover:before {
   }
 }
 
-.startupBig {
-  min-height: 500px;
-  background-image: url(../assets/svg/StartupBig.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+// .startupBig {
+  // max-height: 500px;
+  // background-image: url(../assets/svg/StartupBig.svg);
+  // background-repeat: no-repeat;
+  // background-size: 100%;
 
-  @media only screen and (max-width: 650px) {
-    min-height: 100px;
-  }
+//   @media only screen and (max-width: 650px) {
+//     min-height: 100px;
+//   }
+// }
+
+.startup-videos{
+  width: 100%;
 }
 
 .different {
