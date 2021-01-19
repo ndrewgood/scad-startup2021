@@ -55,7 +55,8 @@ const TrackTwo = ({in: inProp}) => (
         ...transitionStyles[state]
       }}>
         <h1 className="theme-trackHeader">Giving Back To<br />Your <span>Locals</span></h1>
-        <p className="theme-trackBody">Want to give back to the community but don't know how? StartUp is here to support you. During the global pandemic, small businesses have been hit the hardest. Join Track 2 and work hands-on with a minority owned local small business in Savannah or Atlanta, and design creative solutions catered to their unique set of problems.<br/><br/><i>*Judging criteria will be different for each track</i></p>
+        <p className="theme-trackBody">Want to give back to the community but don't know how? StartUp is here to support you. During the global pandemic, small businesses have been hit the hardest. Join Track 2 and work hands-on with a minority-owned(LGBT+, POC, Women-owned, etc.) local small business in Savannah or Atlanta, and design creative solutions catered to their unique set of challenges due to the COVID-19 pandemic.
+          <br/><br/><i>*Judging criteria will be different for each track</i></p>
       </div>
     )}
   </Transition>

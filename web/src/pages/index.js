@@ -160,7 +160,7 @@ const TrackTwo = ({ in: inProp }) => (
           Your <span>Locals</span>
         </h1>
         <p className="track-trackBody">
-        Want to give back to the community but don't know how? StartUp is here to support you. During the global pandemic, small businesses have been hit the hardest. Join Track 2 and work hands-on with a minority owned local small business in Savannah or Atlanta, and design creative solutions catered to their unique set of problems.
+        Want to give back to the community but don't know how? StartUp is here to support you. During the global pandemic, small businesses have been hit the hardest. Join Track 2 and work hands-on with a minority-owned(LGBT+, POC, Women-owened, etc.) local small business in Savannah or Atlanta, and design creative solutions catered to their unique set of challenges due to the COVID-19 pandemic.
           <br />
           <br />
           <i>*Judging criteria will be different for each track</i>
@@ -300,7 +300,7 @@ const IndexPage = props => {
             We're Doing Things <span className="red-highlight">Different</span> This Year
           </h1>
           <p>
-            StartUp 2021 will be held <span className="red-highlight">virtually</span> and consist of two different tracks. Go the OG route and enter Startup with your own original business idea <span className="red-highlight">(Track 1)</span>, or collaborate with local businesses <span className="red-highlight">(Track 2)</span>. While keeping to StartUp tradition, Track 2 allows you to come up with creative business solutions and give back to the community by helping small businesses that have been negatively impacted by the global pandemic.
+            StartUp 2021 will be held <span className="red-highlight">virtually</span> and consist of two different tracks. Go the OG route and enter Startup with your own original business idea <span className="red-highlight">(Track 1)</span>, or collaborate with local businesses <span className="red-highlight">(Track 2)</span>. While keeping to StartUp tradition, Track 2 allows you to come up with creative business solutions and give back to the community by helping small, minority-owned(LGBT+, POC, Women-owened, etc.) businesses that have been negatively impacted by the global pandemic.
           </p>
         </div>
 
