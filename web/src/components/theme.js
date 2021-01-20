@@ -70,7 +70,7 @@ const TrackOne = ({in: inProp}) => (
         ...transitionStyles[state]
       }}>
         <h1 className="theme-trackHeader"><span>Entrepreneurship</span><br />The core of StartUp</h1>
-        <p className="theme-trackBody">This is the core of StartUp. Students who shoose this track will becoming up with their own, new innovative business ideas about their created product or service. Here, student designers have the most free reign to design a creative solution to the problem we present them with. This has, and will always be, StartUp’s core.<br /><br/><i>*Judging criteria will be different for each track</i></p>
+        <p className="theme-trackBody">This is the core of StartUp. Students who choose this track will becoming up with their own, new innovative business ideas about their created product or service. Here, student designers have the most free reign to design a creative solution to the problem we present them with. This has, and will always be, StartUp’s core.<br /><br/><i>*Judging criteria will be different for each track</i></p>
       
       </div>
     )}
