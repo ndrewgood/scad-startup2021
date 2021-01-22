@@ -5,6 +5,8 @@ import Page from "../templates/page";
 import Hero from '../components/hero'
 import ComingSoon from '../assets/images/coming-soon.png'
 import SEDA from '../assets/svg/partners-seda.svg'
+import Youtube from '../assets/svg/partners-youtube.svg'
+import GeorgiaPower from '../assets/svg/partners-georgiapower.svg'
 
 
 import '../styles/partners-team.scss'
@@ -59,7 +61,15 @@ const teamArray = data.allSanityStartupTeamMember.edges;
       <div className="partners-team-partners">
         <div className="partners-team-partners-info container">
           <h2><span>Our Partners</span><br /> and Supporters</h2>
-          <a target="_blank" href="https://seda.org/"><img className="partners-team-partnerLogo" src={SEDA} alt=""/></a>
+          <div className="partners-team-partnerLogoContainer">
+            <div className="partners-team-partnerLogoRow">
+              <a target="_blank" href="https://seda.org/" lassName="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoBig" src={SEDA} alt=""/></a>
+            </div>
+            <div className="partners-team-partnerLogoRow">
+              <a target="_blank" href="https://www.georgiapower.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={Youtube} alt=""/></a>
+              <a target="_blank" href="https://www.youtube.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={GeorgiaPower} alt=""/></a>
+            </div>
+          </div>
         </div>
         {/* <img className="partners-team-comingSoon" src={ComingSoon} alt=""/> */}
       </div>
