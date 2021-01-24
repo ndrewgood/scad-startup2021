@@ -30,7 +30,6 @@ const Deliverables = (props) => {
 
   return (
     <Page>
-      <Theme />
       <Hero 
         smallHeader={"Project Deliverables"} 
         bigHeader={["Show Your", <br key="ugh"/>,  "Creative", <br key="ugh2"/>, "Ideas"]}
@@ -55,6 +54,7 @@ const Deliverables = (props) => {
           
         </ResourceCardGrid>
       </div>
+      <Theme />
     </Page>
   );
 };

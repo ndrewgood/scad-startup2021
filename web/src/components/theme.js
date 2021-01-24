@@ -105,10 +105,10 @@ const Theme = (props) => {
 
   return (
     <>
-      <Hero 
+      {/* <Hero 
         smallHeader={"StartUp 2021 - Two Track System"} 
         bigHeader={["Two Ways", <br key="ugh"/>,  "To Design", <br key="ugh2"/>, "Fully Virtual"]}
-      />
+      /> */}
       <div className="theme-main">
         <div className="theme-buttonContainer">
           <button onClick={() => setTrack(1)}>Track 1</button>
