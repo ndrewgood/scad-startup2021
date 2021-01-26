@@ -2,12 +2,22 @@
     @media only screen and (max-width: 800px) {
         display: none;
     }
+
+    a { 
+        text-decoration: underline;
+        color: #c5c5c5;
+    }
 }
 
 .mobileResource {
     display: none;
     @media only screen and (max-width: 800px) {
         display: block;
+    }
+
+    a { 
+        text-decoration: underline;
+        color: #c5c5c5;
     }
 }
 
