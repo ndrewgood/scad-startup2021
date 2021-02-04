@@ -33,6 +33,11 @@ export default {
       type: 'string'
     },
     {
+      name: 'rsvp',
+      title: 'RSVP',
+      type: 'string'
+    },
+    {
       name: 'image',
       title: 'Images',
       type: 'responsiveImage'
