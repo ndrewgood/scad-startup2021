@@ -8,7 +8,7 @@ import ResourceCard from '../components/resource-card'
 
 import "../styles/schedule.scss"
 
-const ScheduleCard = ({span, bg, type, title, date, description, attendance, imagePosition, image}) => {
+const ScheduleCard = ({span, bg, type, title, rsvp, date, description, attendance, imagePosition, image}) => {
   return (
     <ResourceCard span={span} bg={bg} type={imagePosition ? "schedule-flipped" : "schedule"}>
         <div className="schedule-card-content">
@@ -27,7 +27,12 @@ const ScheduleCard = ({span, bg, type, title, date, description, attendance, ima
               </div>
             ) : null
           }
-          <p className="schedule-card-timeLink">Time & meeting link will be announced soon!</p> 
+          {
+            rsvp ?
+            <p className="schedule-card-timeLink timeLinkUpdated">{rsvp}</p> 
+            :
+            <p className="schedule-card-timeLink">Time & meeting link will be announced soon!</p> 
+          }
         </div>
         { 
           image ? (
@@ -53,6 +58,7 @@ const Schedule = (props) => {
             title
             size
             time
+            rsvp
             description
             requiredAttendance
             image {
@@ -93,6 +99,7 @@ const Schedule = (props) => {
                 bg={edge.node.background ? "gradient" : null}
                 title={edge.node.title}
                 date={edge.node.time}
+                rsvp={edge.node.rsvp}
                 description={edge.node.description}
                 attendance={edge.node.requiredAttendance}
                 image={edge.node.image}
