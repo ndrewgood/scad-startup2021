@@ -109,9 +109,9 @@ const ExpertsPage = (props) => {
       <div className="experts-judgesSection container">
         <h2>Our Knowledgeable<br /><span>Judges</span></h2>
         <div className="experts-judgesCardGrid">
+            <ExpertCard fname="Angela" lname="Benton" picture={angelab} type="judge" company="Streamlytics" link="https://www.linkedin.com/in/abenton/"/>
             <ExpertCard fname="Julia" lname="Niro" picture={julian} type="judge" company="MilkRun" link="https://www.linkedin.com/in/julianiiro/"/>
             <ExpertCard fname="Mike" lname="Buzzard" picture={mikeb} type="judge" company="Google" link="https://www.linkedin.com/in/buzzard/"/>
-            <ExpertCard fname="Angela" lname="Benton" picture={angelab} type="judge" company="Streamlytics" link="https://www.linkedin.com/in/abenton/"/>
             <ExpertCard fname="Jen" lname="Bonnett" picture={jenb} type="judge" company="SEDA" link="https://www.linkedin.com/in/jenniferbonnett/"/>
             <ExpertCard fname="Karim" lname="Elsahy" picture={karime} type="judge" company="elves" link="https://www.linkedin.com/in/elsahy/"/>
             <ExpertCard fname="David" lname="Heredia" picture={davidh} type="judge" company="Heroes of Color" link="https://www.linkedin.com/in/davidheredia/"/>
