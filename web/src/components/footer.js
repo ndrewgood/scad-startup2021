@@ -29,7 +29,7 @@ const Footer = () => {
             <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/FMJ4tY8"><img src={DiscordLogo} alt="Discord Logo" /></a>
           </div>
           <a style={{marginTop:"0"}} target="_blank" rel="noopener noreferrer" href="https://forms.gle/3RYmCA1XgufbTMgS8" className="nav-registerButton">Register</a>
-          <a className="footer-smallBusiness" rel="noopener noreferrer" target="_blank" href="https://forms.gle/5gPieSiSUY6FQtbaA">Small Business Application</a>
+          {/* <a className="footer-smallBusiness" rel="noopener noreferrer" target="_blank" href="https://forms.gle/5gPieSiSUY6FQtbaA">Small Business Application</a> */}
         </div>
       </div>
     </footer>

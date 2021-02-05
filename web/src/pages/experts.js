@@ -172,9 +172,9 @@ const ExpertsPage = (props) => {
             <ExpertCard fname="Jaylon" lname="Smith" picture={jaylons} company="RIISE" link="https://www.linkedin.com/in/jaylonsmith/"/>
             <ExpertCard fname="Eric" lname="Shumate" picture={erics} company="SCAD" link="https://www.linkedin.com/in/eric-shumate-6a72b02/"/>
             <ExpertCard fname="India" lname="Hayes" picture={indiah} company="Mini City" link="https://www.linkedin.com/in/india-hayes-8350a623/"/>
-            <ExpertCard fname="Lauren" lname="Demarest" picture={laurend} company="Sweatvaca" link="https://www.linkedin.com/in/lauren-demarest-9363b71a/"/>
+            <ExpertCard fname="Lauren" lname="Demarest" picture={laurend} company="Sweat Vacay" link="https://www.linkedin.com/in/lauren-demarest-9363b71a/"/>
             <ExpertCard fname="Mfon" lname="Akpan" picture={mfona} company="SCAD" link="https://www.linkedin.com/in/mfon-akpan-5702325/"/>
-            <ExpertCard fname="Beverly" lname="Barnes" picture={beverlyb} company="Sweatvaca" link="https://www.linkedin.com/in/beverley-barnes-9a1a7415/"/>
+            <ExpertCard fname="Beverly" lname="Barnes" picture={beverlyb} company="Sweat Vacay" link="https://www.linkedin.com/in/beverley-barnes-9a1a7415/"/>
             <ExpertCard fname="Angela" lname="Martin" picture={angelam} company="Lenovo" link="https://www.linkedin.com/in/angelamartin98/"/>
             <ExpertCard fname="Allan" lname="Meade, Jr." picture={allanm} company="SCAD" link="https://www.linkedin.com/in/allanmeade/"/>
             <ExpertCard fname="Dwayne" lname="Stephens" picture={dwaynes} company="LiFO Corp" link="https://www.linkedin.com/in/dwayne-stephens-0a924a7a/"/>
