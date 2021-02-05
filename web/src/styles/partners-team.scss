@@ -248,6 +248,7 @@
         }
     }
 
+
     .experts-mentorCardGrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -265,4 +266,12 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+}
+
+.judge-card, .mentor-card {
+    transition: .3s;
+}
+
+.judge-card:hover, .mentor-card:hover {
+    box-shadow: 0px 0px 15px 3px #677bfc44;
 }
