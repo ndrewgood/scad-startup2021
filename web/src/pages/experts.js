@@ -7,6 +7,7 @@ import SampleImage from '../assets/images/placeholder.png'
 
 import abil from '../assets/images/experts/abil.png'
 import aditiv from '../assets/images/experts/aditiv.png'
+import alanaw from '../assets/images/experts/alanaw.png'
 import alanl from '../assets/images/experts/alanl.png'
 import allanh from '../assets/images/experts/allanh.png'
 import allanm from '../assets/images/experts/allanm.png'
@@ -110,8 +111,8 @@ const ExpertsPage = (props) => {
         <h2>Our Knowledgeable<br /><span>Judges</span></h2>
         <div className="experts-judgesCardGrid">
             <ExpertCard fname="Angela" lname="Benton" picture={angelab} type="judge" company="Streamlytics" link="https://www.linkedin.com/in/abenton/"/>
-            <ExpertCard fname="Julia" lname="Niro" picture={julian} type="judge" company="MilkRun" link="https://www.linkedin.com/in/julianiiro/"/>
             <ExpertCard fname="Mike" lname="Buzzard" picture={mikeb} type="judge" company="Google" link="https://www.linkedin.com/in/buzzard/"/>
+            <ExpertCard fname="Julia" lname="Niro" picture={julian} type="judge" company="MilkRun" link="https://www.linkedin.com/in/julianiiro/"/>
             <ExpertCard fname="Jen" lname="Bonnett" picture={jenb} type="judge" company="SEDA" link="https://www.linkedin.com/in/jenniferbonnett/"/>
             <ExpertCard fname="Karim" lname="Elsahy" picture={karime} type="judge" company="elves" link="https://www.linkedin.com/in/elsahy/"/>
             <ExpertCard fname="David" lname="Heredia" picture={davidh} type="judge" company="Heroes of Color" link="https://www.linkedin.com/in/davidheredia/"/>
@@ -119,7 +120,7 @@ const ExpertsPage = (props) => {
             <ExpertCard fname="Eufaula" lname="Garrett" picture={eufaulag} type="judge" company="The Benjamin Company" link="https://www.linkedin.com/in/eufaulagarrett/"/>
             <ExpertCard fname="James" lname="Helms" picture={jamesh} type="judge"company="Intuit" link="https://www.linkedin.com/in/jameshelmsad/"/>
             <ExpertCard fname="Julia" lname="Kemp" picture={juliak} type="judge" company="Pauli Mer" link="https://www.linkedin.com/in/juliakemp/"/>
-            <ExpertCard fname="Zach" lname="Singleton" picture={zachs} type="judge" company="Uber" link="https://www.linkedin.com/in/zsingleton/"/>
+            <ExpertCard fname="Alana" lname="Washington" picture={alanaw} type="judge" company="Uber" link="https://www.linkedin.com/in/alanawashington/"/>
             <ExpertCard fname="Gordon" lname="Lawson" picture={gordonl} type="judge" company="Rangeforce" link="https://www.linkedin.com/in/gordon-lawson-58679710/"/>
             <ExpertCard fname="Jessica" lname="Belfry" picture={jessicab} type="judge" company="SCORE" link="https://www.linkedin.com/in/jessica-belfry-462b0b17/"/>
             <ExpertCard fname="Ned" lname="Duffy" picture={nedd} type="judge" company="SCORE" link="https://savannah.score.org/mentors/ned-duffy"/>
