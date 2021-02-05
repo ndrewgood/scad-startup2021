@@ -7,6 +7,8 @@ import ComingSoon from '../assets/images/coming-soon.png'
 import SEDA from '../assets/svg/partners-seda.svg'
 import Youtube from '../assets/svg/partners-youtube.svg'
 import GeorgiaPower from '../assets/svg/partners-georgiapower.svg'
+import Uber from '../assets/svg/partners-uber.svg'
+import Thnks from '../assets/images/partners-thanks.png'
 
 
 import '../styles/partners-team.scss'
@@ -68,6 +70,10 @@ const teamArray = data.allSanityStartupTeamMember.edges;
             <div className="partners-team-partnerLogoRow">
               <a target="_blank" href="https://www.georgiapower.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={Youtube} alt=""/></a>
               <a target="_blank" href="https://www.youtube.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={GeorgiaPower} alt=""/></a>
+            </div>
+            <div className="partners-team-partnerLogoRow">
+              <a target="_blank" href="https://www.uber.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={Uber} alt=""/></a>
+              <a target="_blank" href="https://www.thnks.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmallImage" src={Thnks} alt=""/></a>
             </div>
           </div>
         </div>
