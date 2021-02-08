@@ -68,8 +68,8 @@ const teamArray = data.allSanityStartupTeamMember.edges;
               <a target="_blank" href="https://seda.org/" lassName="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoBig" src={SEDA} alt=""/></a>
             </div>
             <div className="partners-team-partnerLogoRow">
-              <a target="_blank" href="https://www.georgiapower.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={Youtube} alt=""/></a>
-              <a target="_blank" href="https://www.youtube.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={GeorgiaPower} alt=""/></a>
+              <a target="_blank" href="https://www.youtube.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={Youtube} alt=""/></a>
+              <a target="_blank" href="https://www.georgiapower.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={GeorgiaPower} alt=""/></a>
             </div>
             <div className="partners-team-partnerLogoRow">
               <a target="_blank" href="https://www.uber.com/" className="partners-team-partnerLogoLink"><img className="partners-team-partnerLogoSmall" src={Uber} alt=""/></a>
