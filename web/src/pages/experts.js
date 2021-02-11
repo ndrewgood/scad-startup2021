@@ -118,7 +118,7 @@ const ExpertsPage = (props) => {
             <ExpertCard fname="David" lname="Heredia" picture={davidh} type="judge" company="Heroes of Color" link="https://www.linkedin.com/in/davidheredia/"/>
             {/* <ExpertCard fname="Lauren" lname="Wang" picture={SampleImage} type="judge" company="The Flex Company" link="https://www.linkedin.com/in/laurenschulte/"/> */}
             <ExpertCard fname="Eufaula" lname="Garrett" picture={eufaulag} type="judge" company="The Benjamin Company" link="https://www.linkedin.com/in/eufaulagarrett/"/>
-            <ExpertCard fname="James" lname="Helms" picture={jamesh} type="judge"company="Intuit" link="https://www.linkedin.com/in/jameshelmsad/"/>
+            {/*<ExpertCard fname="James" lname="Helms" picture={jamesh} type="judge"company="Intuit" link="https://www.linkedin.com/in/jameshelmsad/"/>*/}
             <ExpertCard fname="Julia" lname="Kemp" picture={juliak} type="judge" company="Pauli Mer" link="https://www.linkedin.com/in/juliakemp/"/>
             <ExpertCard fname="Alana" lname="Washington" picture={alanaw} type="judge" company="Uber" link="https://www.linkedin.com/in/alanawashington/"/>
             <ExpertCard fname="Gordon" lname="Lawson" picture={gordonl} type="judge" company="Rangeforce" link="https://www.linkedin.com/in/gordon-lawson-58679710/"/>
