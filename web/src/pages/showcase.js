@@ -47,8 +47,10 @@ console.log(showcaseArray);
        showcaseArray.some(i => i.node.shown == true) ? 
        <div className="showcase-background">
          <div className="showcase-container container">
-           <p className="showcase-description">Welcome to the StartUp Showcase page! Here you will be able to jump from Zoom room to Zoom room, visiting and talking to the various participants of StartUp 2021 about the projects they created this week. For participants, please be mindful of who you are letting into your rooms, and for everyone, be courteous when entering a Zoom room. </p>
-           <a className="nav-registerButton mobileNav-registerButton showcase-voteButton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/Aq9sE4TDwCm8Ppgb8">Vote For Your Favorites</a>
+           <div className="showcase-description-container">
+            <p className="showcase-description">Welcome to the StartUp Showcase page! Here you will be able to see all the projects created at StartUp 2021. You can even vote for your favorites and give them the chance to win the fan-favorite prize.</p>
+            <a className="nav-registerButton mobileNav-registerButton showcase-voteButton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/Aq9sE4TDwCm8Ppgb8">Vote For Your Favorites</a>
+           </div>
            <div className="showcase-track-container">
              <h2><span className="red-highlight">Entrepreneurship</span> Track</h2>
              <div className="showcase-track-grid">
