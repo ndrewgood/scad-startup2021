@@ -69,7 +69,8 @@ const NavMobile = () => {
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/experts" className="mobileNav-startupLogo">Experts</Link>
                 <Link onClick={() => setMenuStatus(false)} activeClassName="mobileNav-active" to="/partners-team" className="mobileNav-startupLogo">Partners</Link>
               </div>
-              <a className="nav-registerButton mobileNav-registerButton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/3RYmCA1XgufbTMgS8">Register</a>
+              {/*<a className="nav-registerButton mobileNav-registerButton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/3RYmCA1XgufbTMgS8">Register</a>*/}
+              <a className="nav-registerButton mobileNav-registerButton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/Aq9sE4TDwCm8Ppgb8">Vote</a>
               {/* <a className="footer-smallBusiness mobileNav-smallBusiness" rel="noopener noreferrer" target="_blank" href="https://forms.gle/5gPieSiSUY6FQtbaA">Small Business Application</a> */}
               <div id="mobileNav-socialLinks" className="footer-socialLinks">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/scadflux/"><img src={InstagramLogo} alt="Instagram Logo" /></a>
