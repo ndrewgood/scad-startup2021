@@ -114,12 +114,13 @@ const ExpertsPage = (props) => {
             <ExpertCard fname="Mike" lname="Buzzard" picture={mikeb} type="judge" company="Google" link="https://www.linkedin.com/in/buzzard/"/>
             <ExpertCard fname="Julia" lname="Niro" picture={julian} type="judge" company="MilkRun" link="https://www.linkedin.com/in/julianiiro/"/>
             <ExpertCard fname="Jen" lname="Bonnett" picture={jenb} type="judge" company="SEDA" link="https://www.linkedin.com/in/jenniferbonnett/"/>
-            <ExpertCard fname="Karim" lname="Elsahy" picture={karime} type="judge" company="elves" link="https://www.linkedin.com/in/elsahy/"/>
+            {/* <ExpertCard fname="Karim" lname="Elsahy" picture={karime} type="judge" company="elves" link="https://www.linkedin.com/in/elsahy/"/> */}
             <ExpertCard fname="David" lname="Heredia" picture={davidh} type="judge" company="Heroes of Color" link="https://www.linkedin.com/in/davidheredia/"/>
             {/* <ExpertCard fname="Lauren" lname="Wang" picture={SampleImage} type="judge" company="The Flex Company" link="https://www.linkedin.com/in/laurenschulte/"/> */}
             <ExpertCard fname="Eufaula" lname="Garrett" picture={eufaulag} type="judge" company="The Benjamin Company" link="https://www.linkedin.com/in/eufaulagarrett/"/>
             {/*<ExpertCard fname="James" lname="Helms" picture={jamesh} type="judge"company="Intuit" link="https://www.linkedin.com/in/jameshelmsad/"/>*/}
             <ExpertCard fname="Julia" lname="Kemp" picture={juliak} type="judge" company="Pauli Mer" link="https://www.linkedin.com/in/juliakemp/"/>
+            <ExpertCard fname="India" lname="Hayes" picture={indiah} type="judge" company="Mini City" link="https://www.linkedin.com/in/india-hayes-8350a623/"/>
             <ExpertCard fname="Alana" lname="Washington" picture={alanaw} type="judge" company="Uber" link="https://www.linkedin.com/in/alanawashington/"/>
             <ExpertCard fname="Gordon" lname="Lawson" picture={gordonl} type="judge" company="Rangeforce" link="https://www.linkedin.com/in/gordon-lawson-58679710/"/>
             <ExpertCard fname="Jessica" lname="Belfry" picture={jessicab} type="judge" company="SCORE" link="https://www.linkedin.com/in/jessica-belfry-462b0b17/"/>
@@ -172,7 +173,6 @@ const ExpertsPage = (props) => {
             <ExpertCard fname="Eleanor" lname="Turner" picture={eleanort} company="The Big Favorite" link="https://www.linkedin.com/in/eleanor-turner/"/>
             <ExpertCard fname="Jaylon" lname="Smith" picture={jaylons} company="RIISE" link="https://www.linkedin.com/in/jaylonsmith/"/>
             <ExpertCard fname="Eric" lname="Shumate" picture={erics} company="SCAD" link="https://www.linkedin.com/in/eric-shumate-6a72b02/"/>
-            <ExpertCard fname="India" lname="Hayes" picture={indiah} company="Mini City" link="https://www.linkedin.com/in/india-hayes-8350a623/"/>
             <ExpertCard fname="Lauren" lname="Demarest" picture={laurend} company="Sweat Vacay" link="https://www.linkedin.com/in/lauren-demarest-9363b71a/"/>
             <ExpertCard fname="Mfon" lname="Akpan" picture={mfona} company="SCAD" link="https://www.linkedin.com/in/mfon-akpan-5702325/"/>
             <ExpertCard fname="Beverly" lname="Barnes" picture={beverlyb} company="Sweat Vacay" link="https://www.linkedin.com/in/beverley-barnes-9a1a7415/"/>
