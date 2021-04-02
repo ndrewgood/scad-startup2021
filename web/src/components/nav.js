@@ -23,7 +23,7 @@ const Nav = () => {
           </ul>
         </div>
       </ul>
-      <a className="nav-registerButton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/Aq9sE4TDwCm8Ppgb8">Vote</a>
+      <a className="nav-registerButton" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/CLfXfmIMaiY/">View Winners</a>
     </nav>
   );
 };
